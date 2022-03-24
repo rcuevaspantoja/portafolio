@@ -20,20 +20,30 @@ export const Navegacion = () =>{
     return (
       <>
 
-        <Button variant="text" component={Link} to="/acerca"> 
-          <Typography theme={theme} style={{ fontSize: 20, color:'#707070'}}>Acerca</Typography>
-        </Button>
-
-        <Button variant="text" component={Link} to="/proyectos"> 
-          <Typography theme={theme} style={{ fontSize: 20, color:'#707070'}}>Proyectos</Typography>
-        </Button>
+        <div className='Navegacion'>
+          <Link  theme={theme} 
+            style={{ fontSize: 21, color:'#707070', textDecoration: 'none'}} 
+            to="/acerca">
+            {'Acerca'}
+          </Link>
+        </div>
         
-        <Button variant="text" component={Link} to="/curriculum"> 
-          <Typography theme={theme} style={{ fontSize: 20, color:'#707070'}}>Curriculum</Typography>
-        </Button>
-
-        
-        
+        <div className='Navegacion'>
+          <Link theme={theme} 
+            style={{ fontSize: 21, color:'#707070', textDecoration: 'none'}} 
+            to="/proyectos">
+              Proyectos
+          </Link>
+        </div>
+      
+        <div className='Navegacion'>
+          <Link theme={theme} 
+            style={{ fontSize: 21, color:'#707070', textDecoration: 'none'}} 
+            to="/curriculum">
+              Curriculum
+          </Link>  
+        </div>
+     
         
       </>
     )

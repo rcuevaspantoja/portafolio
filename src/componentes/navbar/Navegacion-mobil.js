@@ -1,8 +1,6 @@
 import React from 'react'
 import { createTheme } from '@material-ui/core/styles';
-import Typography from '@mui/material/Typography';
 import { Link } from "react-router-dom";
-import Button from '@mui/material/Button';
 
 export const NavegacionMobil = (props) =>{
 
@@ -19,21 +17,21 @@ export const NavegacionMobil = (props) =>{
       <>
 
         <Link  theme={theme} 
-          style={{ fontSize: 20, color:'#707070'}} 
+          style={{ fontSize: 20, color:'#707070', textDecoration: 'none'}} 
           to="/acerca" 
-          onClick={ () => props.isMobile && props.cerrarMenuMobil() }>
+          onClick={ () => props.isMobile && props.cerrarMenuMobil() && props.cambiarTitulo('Acerca') }>
             {'Acerca'}
         </Link>
 
         <Link theme={theme} 
-          style={{ fontSize: 20, color:'#707070'}} 
+          style={{ fontSize: 20, color:'#707070', textDecoration: 'none'}} 
           to="/proyectos" 
           onClick={ () => props.isMobile && props.cerrarMenuMobil() }>
             Proyectos
         </Link>
       
         <Link theme={theme} 
-          style={{ fontSize: 20, color:'#707070'}} 
+          style={{ fontSize: 20, color:'#707070', textDecoration: 'none'}} 
           to="/curriculum" 
           onClick={ () => props.isMobile && props.cerrarMenuMobil() }>
             Curriculum
