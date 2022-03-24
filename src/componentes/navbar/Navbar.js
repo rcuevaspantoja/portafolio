@@ -1,26 +1,17 @@
 import React from 'react'
 import Typography from '@mui/material/Typography';
-import Redes from './Redes'
-import Navegacion from './Navegacion'
+import Navbarmobil from './Navbar-mobil';
+import Navbarnormal from './Navbar-normal';
 export const Navbar = () => {
 
 
-
-
-
-
-
-
-
   return (
+        <>
         
-        <div className='Navbar'>
+          <Navbarnormal/>
+          <Navbarmobil/>
+        </>
 
-            
-            <Navegacion />
-
-            <Redes />
-        </div>
 
   )
 }

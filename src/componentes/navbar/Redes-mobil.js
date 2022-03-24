@@ -7,7 +7,7 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 
-export const Redes = () => {
+export const RedesMobil = (props) => {
 
     const theme = createTheme({
         typography: {
@@ -43,22 +43,22 @@ export const Redes = () => {
 
     return (
       <>
-        <div className='Instagram' onMouseEnter={onHoverInstagram} onMouseLeave={onLeaveInstagram}>
+        <div className='Instagram-mobil' onMouseEnter={onHoverInstagram} onMouseLeave={onLeaveInstagram}>
             {hoverInstagram ? <Typography theme={theme} style={{ fontSize: 20, color:'#707070'}}> rcuevaspantoja </Typography> : "" }
             <IconButton size="large" href='https://www.instagram.com/rcuevaspantoja/' target="_blank">
             <div className='Instagram'><InstagramIcon style={{ fontSize: 40 }} fontSize="inherit" /></div>
             </IconButton>
         </div>
 
-        <div className='Twitter' onMouseEnter={onHoverTwitter} onMouseLeave={onLeaveTwitter}>
+        <div className='Twitter-mobil' onMouseEnter={onHoverTwitter} onMouseLeave={onLeaveTwitter}>
             {hoverTwitter ? <Typography theme={theme} style={{ fontSize: 20, color:'#707070'}}> rcuevaspantoja </Typography> : "" }
             <IconButton size="large" href='https://twitter.com/rcuevaspantoja' target="_blank">
                 <div className='Twitter'><TwitterIcon style={{ fontSize: 40 }} fontSize="inherit" /></div>
             </IconButton>
         </div>
 
-        <div className='LinkedIn' onMouseEnter={onHoverLinkedIn} onMouseLeave={onLeaveLinkedIn}>
-            {hoverLinkedIn ? <Typography theme={theme} style={{ fontSize: 20, color:'#707070'}}> Rodolfo </Typography> : "" }
+        <div className='LinkedIn-mobil' onMouseEnter={onHoverLinkedIn} onMouseLeave={onLeaveLinkedIn}>
+            {hoverLinkedIn ? <Typography theme={theme} style={{ fontSize: 20, color:'#707070'}}> Rodolfo  </Typography> : "" }
             <IconButton size="large" href='https://www.linkedin.com/in/rodolfo-cuevas-7407231b5/' target="_blank"> 
                 <div className='LinkedIn'><LinkedInIcon style={{ fontSize: 40 }} fontSize="inherit" /></div>
             </IconButton>
@@ -67,4 +67,4 @@ export const Redes = () => {
     )
 }
 
-export default Redes
+export default RedesMobil
