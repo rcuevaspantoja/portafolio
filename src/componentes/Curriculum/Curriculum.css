@@ -1,0 +1,54 @@
+
+.Curriculum{
+
+    min-height: 70vh;
+}
+/*VERSION DE ESCRITORIO*/
+.CurriculumNormal{
+    display: flex;
+    height: 70vh;
+    margin-left: 30vh;
+    margin-right: 30vh;
+    justify-content: center;
+}
+
+.CurriculumNormal-parte1{
+    display: flex;
+    min-width: 70vh;
+    justify-content: center;
+    align-items: center;
+   /*  background-color: blue; */
+}
+
+.CurriculumNormal-parte2{
+    display:flex;
+    min-width: 70vh;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 40px;
+    padding-left: 15px;
+/*     background-color: green; */
+}
+
+.EmailMe{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+/*     background-color: blueviolet; */
+    margin: 6px;
+    margin-top: 17px;
+    width: 400px;
+
+}
+
+
+
+.CurriculumMobil{
+    display: none;
+    background-color: blue;
+}
+
+/*VERSION WEB*/

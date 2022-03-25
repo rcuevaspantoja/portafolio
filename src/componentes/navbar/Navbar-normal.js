@@ -25,7 +25,7 @@ export const Navbar = () => {
           </div>
 
           <div className='Navbar-3'>
-            <Typography theme={theme} style={{ fontSize: 25, color:'#707070'}}> Rodolfo Cuevas </Typography>
+            <Typography theme={theme} style={{ fontSize: 25, color:'#000000'}}> Rodolfo Cuevas </Typography>
           </div>
 
           <div className='Navbar-2'>

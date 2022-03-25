@@ -22,7 +22,7 @@ export const Navegacion = () =>{
 
         <div className='Navegacion'>
           <Link  theme={theme} 
-            style={{ fontSize: 21, color:'#707070', textDecoration: 'none'}} 
+            style={{ fontSize: 21, color:'#000000', textDecoration: 'none'}} 
             to="/acerca">
             {'Acerca'}
           </Link>
@@ -30,7 +30,7 @@ export const Navegacion = () =>{
         
         <div className='Navegacion'>
           <Link theme={theme} 
-            style={{ fontSize: 21, color:'#707070', textDecoration: 'none'}} 
+            style={{ fontSize: 21, color:'#000000', textDecoration: 'none'}} 
             to="/proyectos">
               Proyectos
           </Link>
@@ -38,7 +38,7 @@ export const Navegacion = () =>{
       
         <div className='Navegacion'>
           <Link theme={theme} 
-            style={{ fontSize: 21, color:'#707070', textDecoration: 'none'}} 
+            style={{ fontSize: 21, color:'#000000', textDecoration: 'none'}} 
             to="/curriculum">
               Curriculum
           </Link>  

@@ -1,121 +1,125 @@
-
+/* ESTILOS NAVBAR-NORMAL */
 .Contenedor-Navbar{
 
-    display:flex;
-    justify-content: space-around;
-  }
+  display:flex;
+  justify-content: space-around;
+}
+
+.Contenedor-Navbar-mobil{
+  display: none;
+}
+
+/* MENÚ */
+.Navbar-1{
+  display:flex;
+  padding-left: 15px;
+  padding-top: 11px;
+  justify-content: flex-start;
+  align-items: center;
+  min-width: 35%;
+}
+
+.Navegacion{
+  display:flex;
+  flex-direction: row;
+  margin-left: 15px;
   
-  .Contenedor-Navbar-mobil{
+}
+
+/* REDES */
+.Navbar-2{
+  align-items: center;
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 11px;
+  padding-right: 3%;
+  min-width: 30%;
+  width: 30%;
+  min-height: 8vh;
+}
+
+/* Rodolfo Cuevas */
+.Navbar-3{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 11px;
+  padding-right: 10%;
+  width: 35%;
+  min-height: 8vh;
+}
+
+.Navbar-redes{
+  display: flex;
+}
+
+.Instagram, .Twitter, .LinkedIn{
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0.1%;
+}
+
+.Instagram:hover{
+  color: #ca2154 ;
+}
+.Twitter:hover{
+  color: #1c96e9;
+}
+.LinkedIn:hover{
+  color: #0270ad;
+}
+
+.Instagram-mobil, .Twitter-mobil, .LinkedIn-mobil{
+  display:flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  padding: 0.1%;
+}
+
+/*ESTILOS NAVBAR-MOBIL*/
+
+@media (max-width : 1150px){
+
+  .Contenedor-Navbar{
     display: none;
   }
   
-  .Navbar-1{
-    display:flex;
-    padding-left: 15px;
-    padding-top: 11px;
-    justify-content: flex-start;
+  .Contenedor-Navbar-mobil{
+    display: flex;
     align-items: center;
-    min-width: 35%;
-  }
-  
-  .Navegacion{
-    display:flex;
-    flex-direction: row;
-    margin-left: 15px;
-    
+    flex-direction: column;
+    padding-left: 1% ;
+    margin-top: 29px;
+    height: 20%;
   }
 
-  .Navbar-2{
-    align-items: center;
+  .Hamburgueza{
     display: flex;
-    justify-content: flex-end;
+    position: absolute;
+    right: 5%;
+  }
+
+  .Navbar-1-mobil{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 25px;
+  }
+
+  .Navbar-2-mobil{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding-top: 11px;
-    padding-right: 3%;
-    min-width: 30%;
-    width: 30%;
     min-height: 8vh;
   }
-  
-  .Navbar-3{
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    padding-top: 11px;
-    padding-right: 10%;
-    width: 35%;
-    min-height: 8vh;
-  }
-  
-  .Navbar-redes{
-    display: flex;
-  }
-  
-  .Instagram, .Twitter, .LinkedIn{
+
+  .Navbar-3-mobil{
     display:flex;
-    flex-direction: row;
     align-items: center;
-    padding: 0.1%;
+    justify-content: center;
   }
-  
-  .Instagram:hover{
-    color: #ca2154 ;
-  }
-  .Twitter:hover{
-    color: #1c96e9;
-  }
-  .LinkedIn:hover{
-    color: #0270ad;
-  }
-  
-  .Instagram-mobil, .Twitter-mobil, .LinkedIn-mobil{
-    display:flex;
-    flex-direction: column-reverse;
-    align-items: center;
-    padding: 0.1%;
-  }
-  
-  
-  @media (max-width : 1150px){
-  
-    .Contenedor-Navbar{
-      display: none;
-    }
-    
-    .Contenedor-Navbar-mobil{
-      display: flex;
-      align-items: center;
-      flex-direction: column;
-      padding-left: 1% ;
-      margin-top: 29px;
-      height: 20%;
-    }
-  
-    .Hamburgueza{
-      display: flex;
-      position: absolute;
-      right: 5%;
-    }
-  
-    .Navbar-1-mobil{
-      display:flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      padding-top: 25px;
-    }
-  
-    .Navbar-2-mobil{
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding-top: 11px;
-      min-height: 8vh;
-    }
-  
-    .Navbar-3-mobil{
-      display:flex;
-      align-items: center;
-      justify-content: center;
-    }
-  
-  }
+
+}

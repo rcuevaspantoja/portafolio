@@ -40,7 +40,7 @@ export const Navbar = () => {
         <div className='Contenedor-Navbar-mobil'>
 
           <div className='Navbar-3-mobil'>
-            <Typography theme={theme} style={{ fontSize: 25, color:'#707070', textDecoration: 'none'}} > 
+            <Typography theme={theme} style={{ fontSize: 25, color:'#000000', textDecoration: 'none'}} > 
               Rodolfo Cuevas 
             </Typography>
           </div>
