@@ -1,8 +1,8 @@
 import { Typography } from '@mui/material'
 import React from 'react'
 import { createTheme } from '@material-ui/core/styles';
-import TextField from '@mui/material/TextField';
 import EmailMe from './EmailMe';
+import Recomendacion from './Recomendacion';
 
 function InformacionAdicional() {
 
@@ -21,6 +21,8 @@ function InformacionAdicional() {
             </Typography>
             
             <EmailMe/>
+
+            <Recomendacion />
             
         </>
     )
