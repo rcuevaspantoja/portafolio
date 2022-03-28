@@ -2,8 +2,7 @@ import React from 'react'
 import { styled, createTheme } from '@mui/material/styles';
 import ButtonBase from '@mui/material/ButtonBase';
 import Typography from '@mui/material/Typography';
-import imagen1 from './Curriculum.jpg';
-
+import imagen1 from '../../archivos/Curriculum.jpg';
 
 function DescargarCV() {
 
@@ -90,24 +89,28 @@ function DescargarCV() {
       <img src={ imagen1 } alt="Imagen Curriculum" style={{maxWidth: 400}}
       >
       </img>
-          <ImageBackdrop className="MuiImageBackdrop-root" />
+        <ImageBackdrop className="MuiImageBackdrop-root" />
+          <a href={require("../../archivos/CV_Rodolfo_2021.pdf")} download="Curriculum-RodolfoCuevas.pdf">
           <Image>
-            <Typography
-              component="span"
-              variant="subtitle1"
-              theme={theme}
-              style={{ fontSize: 20, color:'#000000'}}
-              sx={{
-                position: 'relative',
-                p: 4,
-                pt: 2,
-                pb: (theme) => `calc(${theme.spacing(1)} + 6px)`,
-              }}
-            >
-              {"Descargar"}
-              <ImageMarked />
-            </Typography>
+              <Typography
+                component="span"
+                variant="subtitle1"
+                theme={theme}
+                style={{ fontSize: 20, color:'#000000'}}
+                sx={{
+                  position: 'relative',
+                  p: 4,
+                  pt: 2,
+                  pb: (theme) => `calc(${theme.spacing(1)} + 6px)`,
+                }}
+              >
+                
+                {"Descargar"}
+                <ImageMarked />
+              </Typography>
           </Image>
+          </a>
+
         </ImageButton>
 
 

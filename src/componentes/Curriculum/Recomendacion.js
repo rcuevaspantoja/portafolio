@@ -25,7 +25,7 @@ function Recomendacion() {
             </div>
 
             <div className='Recomendacion-parte2'>
-                <Typography theme={theme} align="center" style={{ fontSize: 14, color:'#707070'}}>
+                <Typography theme={theme} align="center" style={{ fontSize: 14, color:'#707070', marginTop:'5px'}}>
                     Docente Departamento de Sistemas de Información
                     Facultad de Ciencias Empresariales                    
                 </Typography>
