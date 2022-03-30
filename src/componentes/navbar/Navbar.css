@@ -91,7 +91,6 @@
     flex-direction: column;
     padding-left: 1% ;
     margin-top: 29px;
-    height: 20%;
   }
 
   .Hamburgueza{
@@ -105,7 +104,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 25px;
+    padding-top: 20px;
   }
 
   .Navbar-2-mobil{
@@ -113,7 +112,6 @@
     align-items: center;
     justify-content: center;
     padding-top: 11px;
-    min-height: 8vh;
   }
 
   .Navbar-3-mobil{

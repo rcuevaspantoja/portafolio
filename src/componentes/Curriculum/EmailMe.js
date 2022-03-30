@@ -1,35 +1,30 @@
 import React from 'react'
 import TextField from '@mui/material/TextField';
-import Button from '@mui/material/Button';
-import EmailIcon from '@mui/icons-material/Email';
-import Link from '@mui/material/Link';
+import ContentCopyIcon from '@mui/icons-material/ContentCopy';
+import InputAdornment from '@mui/material/InputAdornment';
+import { IconButton } from '@mui/material';
 
 
 function EmailMe() {
 
+  const correo = 'rcuevaspantoja@gmail.com'
+
   return (
     <div className='EmailMe'>
-
-        <TextField  
-            style={{width: 240}}
-            InputProps={{readOnly: true}}
-            defaultValue="rcuevaspantoja@gmail.com"
-            variant="outlined" 
-        />
         
-
-
-        <Link underline="none" href="mailto:rcuevaspantoja@gmail.com?subject=Contacto vía sitioweb&body=Hola, me gustaría ponerme en contacto contigo">
-          <Button className='escribirme' 
-          variant="contained" color="error"  
-          startIcon={<EmailIcon />}
-          onClick={() => window.location = 'mailto:rcuevaspantoja@gmail.com'}
-          >
-              Escribir
-          </Button> 
-        </Link>
-
-
+        <TextField  
+            style={{width: 290}}
+            defaultValue= { correo }
+            InputProps={{
+              endAdornment: (
+                <InputAdornment position="end" >
+                  <IconButton onClick={ navigator.clipboard.writeText( correo ) }>
+                    <ContentCopyIcon sx={{ color: 'action.active', mr: 1, my: 0.5 }} />
+                  </IconButton>
+                </InputAdornment>
+              ),  readOnly: true,
+            }}
+        />
     </div>
   )
 }
