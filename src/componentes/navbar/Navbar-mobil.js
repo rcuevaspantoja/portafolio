@@ -28,11 +28,11 @@ export const Navbar = () => {
     config: {duration: 700} ,
     reverse: !animacion
   })  
-
+/*
   const springMovimiento = useSpring({
     from: {y: -50}
   })
-
+*/
   const[open, setOpen] = useState(false);
 
   const multifuncionAbrir = () =>{
@@ -73,7 +73,7 @@ export const Navbar = () => {
           </div>
 
           {open ? menuCerrado : menuAbierto}
-          <animated.div style={springMovimiento}>
+          <div>
             <animated.div style={springNavBar} className='Navbar-1-mobil'>
                 {open && <NavegacionMobil isMobile={true} cerrarMenuMobil={cerrarMenuMobil} />}
             </animated.div>
@@ -81,7 +81,7 @@ export const Navbar = () => {
             <animated.div style={springNavBar} className='Navbar-2-mobil'>
               {open && <RedesMobil />}
             </animated.div>
-          </animated.div>
+          </div>
 
 
         </div>
