@@ -19,7 +19,7 @@ export const Navbar = () => {
 
   //animacion
   const [animacion, setAnimacion] = useState( false )
-  const [animacion2, setAnimacion2] = useState( false )
+  //const [animacion2, setAnimacion2] = useState( false )
 
 
   const springNavBar = useSpring({

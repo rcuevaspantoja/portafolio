@@ -3,14 +3,22 @@ import TextField from '@mui/material/TextField';
 import ContentCopyIcon from '@mui/icons-material/ContentCopy';
 import InputAdornment from '@mui/material/InputAdornment';
 import { IconButton } from '@mui/material';
-
+import {useSpring, animated } from 'react-spring'
 
 function EmailMe() {
 
   const correo = 'rcuevaspantoja@gmail.com'
 
+  const springCurriculum2 = useSpring({
+    from:{ opacity: 0 },
+    to: { opacity: 1 },
+    config: {duration: 1000} ,
+    delay: 1000,
+
+  })  
+
   return (
-    <div className='EmailMe'>
+    <animated.div style={ springCurriculum2 } className='EmailMe'>
         
         <TextField  
             style={{width: 290}}
@@ -25,7 +33,7 @@ function EmailMe() {
               ),  readOnly: true,
             }}
         />
-    </div>
+    </animated.div>
   )
 }
 

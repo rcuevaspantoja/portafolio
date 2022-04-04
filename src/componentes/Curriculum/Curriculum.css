@@ -30,6 +30,12 @@
     flex-direction: column;
 }
 
+.hablamos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .EmailMe{
     display: flex;
     flex-direction: row;
