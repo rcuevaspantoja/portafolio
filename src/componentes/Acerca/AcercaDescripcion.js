@@ -18,7 +18,7 @@ function AcercaDescripcion() {
 
   return (
     <div className='AcercaDescripcion'>
-        <div>
+        <div className='AcercaDescripcion-holamundo'>
             <Typography theme={theme} variant='h4'>
                 Hola mundo{emoji.get('earth_americas')}, soy Rodolfo.
             </Typography>

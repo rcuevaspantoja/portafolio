@@ -44,21 +44,21 @@ export const RedesMobil = (props) => {
     return (
       <>
         <div className='Instagram-mobil' onMouseEnter={onHoverInstagram} onMouseLeave={onLeaveInstagram}>
-            {hoverInstagram ? <Typography theme={theme} style={{ fontSize: 20, color:'#707070'}}> rcuevaspantoja </Typography> : "" }
+            
             <IconButton size="large" href='https://www.instagram.com/rcuevaspantoja/' target="_blank">
             <div className='Instagram'><InstagramIcon style={{ fontSize: 40 }} fontSize="inherit" /></div>
             </IconButton>
         </div>
 
         <div className='Twitter-mobil' onMouseEnter={onHoverTwitter} onMouseLeave={onLeaveTwitter}>
-            {hoverTwitter ? <Typography theme={theme} style={{ fontSize: 20, color:'#707070'}}> rcuevaspantoja </Typography> : "" }
+            
             <IconButton size="large" href='https://twitter.com/rcuevaspantoja' target="_blank">
                 <div className='Twitter'><TwitterIcon style={{ fontSize: 40 }} fontSize="inherit" /></div>
             </IconButton>
         </div>
 
         <div className='LinkedIn-mobil' onMouseEnter={onHoverLinkedIn} onMouseLeave={onLeaveLinkedIn}>
-            {hoverLinkedIn ? <Typography theme={theme} style={{ fontSize: 20, color:'#707070'}}> Rodolfo  </Typography> : "" }
+            
             <IconButton size="large" href='https://www.linkedin.com/in/rodolfo-cuevas-7407231b5/' target="_blank"> 
                 <div className='LinkedIn'><LinkedInIcon style={{ fontSize: 40 }} fontSize="inherit" /></div>
             </IconButton>
