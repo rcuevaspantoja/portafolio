@@ -1,0 +1,62 @@
+
+.Acerca {
+    display: flex;
+    min-height: 70vh;
+    margin: 20px;
+    /* background-color: red; */
+}
+
+.AcercaFoto{
+    display: flex;
+    min-width: 40%;
+    align-items: flex-start;
+    margin-top: 60px;
+    justify-content: center;
+    /* background-color: blue; */
+}
+
+.AcercaDescripcion{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* background-color: green; */
+    margin-right: 4%;
+}
+
+.AcercaPasatiempos{
+    display: flex;
+    align-items: center;
+    min-height: 40%;
+    /* background-color: yellow; */
+}
+
+.AcercaPasatiempos-box{
+    display: flex;
+    border-radius: 5px;
+    flex-direction: column;
+}
+
+.AcercaPasatiempos-pasatiempos{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 7px;
+    margin-bottom: 5px;
+}
+
+.AcercaPasatiempos-botones{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.AcercaPasatiempos-descripcion{
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-top: 30px;
+}
+
+.profile-pic{
+    max-width: 400px;
+    border-radius: 7px;
+    box-shadow: 10px 10px 5px rgb(210, 210, 210);
+}
