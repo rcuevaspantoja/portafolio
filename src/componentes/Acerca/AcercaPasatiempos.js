@@ -46,7 +46,7 @@ function AcercaPasatiempos() {
         <Box className='AcercaPasatiempos-box'
             sx={{
                 width: '100%',
-                height: 300,
+                height: '100%',
                 backgroundColor: '#e6e6e6',
             }}>
 

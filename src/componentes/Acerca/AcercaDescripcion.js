@@ -30,7 +30,7 @@ function AcercaDescripcion() {
             </Typography>
         </div>
 
-
+        
         <AcercaPasatiempos/>
     </div>
   )
