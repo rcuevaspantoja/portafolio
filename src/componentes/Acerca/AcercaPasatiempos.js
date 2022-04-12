@@ -16,8 +16,8 @@ function AcercaPasatiempos() {
 
     var emoji = require('node-emoji')
 
-    const [ emojiPasatiempo, setEmojiPasatiempo ] = useState('bulb')
-    const [ descripcionPasatiempo, setDescripcionPasatiempo ] = useState('')
+    const [ emojiPasatiempo, setEmojiPasatiempo ] = useState('runner')
+    const [ descripcionPasatiempo, setDescripcionPasatiempo ] = useState('Descubierta a muy tardía edad, el gimnasio ha sido una gran manera para desestresarme, pasar el tiempo con amigos y para poder meditar. Sumado a los obvios beneficios que vienen de la mano con la actividad física.')
 
     const gimnasio = () => {
         setEmojiPasatiempo('runner');
@@ -55,10 +55,10 @@ function AcercaPasatiempos() {
             </div>        
 
             <div className='AcercaPasatiempos-botones'>
-                <Button variant="contained" color='info' onClick={gimnasio}>Gimnasio</Button>
-                <Button variant="contained" color='info' onClick={fotografia}>Fotografía</Button>
-                <Button variant="contained" color='info' onClick={teclados}>Teclados</Button>
-                <Button variant="contained" color='info' onClick={aprender}>Aprender</Button>
+                <Button className='AcercaPasatiempos-botones-hijo' variant="contained" color='info' onClick={gimnasio}>Gimnasio</Button>
+                <Button className='AcercaPasatiempos-botones-hijo' variant="contained" color='info' onClick={fotografia}>Fotografía</Button>
+                <Button className='AcercaPasatiempos-botones-hijo' variant="contained" color='info' onClick={teclados}>Teclados</Button>
+                <Button className='AcercaPasatiempos-botones-hijo' variant="contained" color='info' onClick={aprender}>Aprender</Button>
             </div>   
 
             <div className='AcercaPasatiempos-descripcion'>

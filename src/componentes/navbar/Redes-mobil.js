@@ -1,6 +1,4 @@
 import React, { useState } from 'react'
-import { createTheme } from '@material-ui/core/styles';
-import Typography from '@mui/material/Typography';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import IconButton from '@mui/material/IconButton';
 import InstagramIcon from '@mui/icons-material/Instagram';
@@ -8,14 +6,6 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 
 export const RedesMobil = (props) => {
-
-    const theme = createTheme({
-        typography: {
-          fontFamily: [
-            'Varela Round',
-            'sans-serif',
-          ].join(','),
-        },});
 
     const [hoverInstagram, setHoverInstagram] = useState(false);
     const [hoverTwitter, setHoverTwitter] = useState(false);
