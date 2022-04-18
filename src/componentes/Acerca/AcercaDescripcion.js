@@ -22,7 +22,7 @@ function AcercaDescripcion() {
             <Typography theme={theme} variant='h4'>
                 Hola mundo{emoji.get('earth_americas')}, soy Rodolfo.
             </Typography>
-
+            <br/>
             <Typography theme={theme} variant='h6'>
             Soy un recientemente titulado en Ingeniería Civil en Informática, de la Universidad del Bío-Bío. 
             Y cuento con muchas ganas de poder aprender nuevas tecnologías y mejorarme. Me gusta mucho el frontend 
