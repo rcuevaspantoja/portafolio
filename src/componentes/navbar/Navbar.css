@@ -11,19 +11,28 @@
 
 /* MENÚ */
 .Navbar-1{
-  display:flex;
+  display: grid;
+  grid-auto-flow: column;
   padding-left: 15px;
   padding-top: 11px;
-  justify-content: flex-start;
   align-items: center;
   min-width: 35%;
 }
 
 .Navegacion{
-  display:flex;
-  flex-direction: row;
-  margin-left: 15px;
-  
+  display: flex;
+  /*este width define el largo de la barra de navegacion*/
+  width: 300px;
+  justify-content: space-between;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.active{
+  border-radius: 7px;
+  padding-left: 6px;
+  padding-right: 6px;
+  background-color: #e6e6e6;
 }
 
 /* REDES */

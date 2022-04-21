@@ -15,10 +15,10 @@ function App() {
           <Navbar/>
 
           <Routes>
-            <Route path="/" element={ <Navigate to="/acerca" /> } />
-            <Route path="/proyectos" element={<Proyectos/>} />
-            <Route path="/acerca" element={ <Acerca/> } />
-            <Route path="/curriculum" element={<Curriculum/>} />  
+            <Route path={"/"} exact={true} element={ <Navigate to="/acerca" /> } />
+            <Route path={"/proyectos"} exact={true} element={<Proyectos/>} />
+            <Route path={"/acerca"} exact={true} element={ <Acerca/> } />
+            <Route path={"/curriculum"} exact={true} element={<Curriculum/>} />  
           </Routes>
           
       </BrowserRouter>
