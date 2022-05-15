@@ -14,23 +14,23 @@ export const Navbar = () => {
       ].join(','),
     },});
 
-    const links = [
-      {
-        path: '/acerca',
-        name: 'Acerca',
-        exact: true
-      },
-      {
-        path: '/proyectos',
-        name: 'Proyectos',
-        exact: true
-      },
-      {	
-        path: '/curriculum',
-        name: 'Curriculum',
-        exact: true
-      }
-    ]
+  const links = [
+    {
+      path: '/acerca',
+      name: 'Acerca',
+      exact: true
+    },
+    {
+      path: '/proyectos',
+      name: 'Proyectos',
+      exact: true
+    },
+    {	
+      path: '/curriculum',
+      name: 'Curriculum',
+      exact: true
+    }
+  ]
 
     const Nav = () => (
       <div className='Navegacion'>
@@ -64,8 +64,6 @@ export const Navbar = () => {
         <Redes />
       </div>
     </div>
-
-
   )
 }
 
