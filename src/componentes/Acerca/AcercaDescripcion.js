@@ -20,7 +20,7 @@ function AcercaDescripcion() {
     <div className='AcercaDescripcion'>
         <div className='AcercaDescripcion-holamundo'>
             <Typography theme={theme} variant='h4'>
-                Hola mundo{emoji.get('earth_americas')}, soy Rodolfo.
+                Hola mundo{emoji.get('earth_americas')},
             </Typography>
             <br/>
             <Typography theme={theme} variant='h6'>

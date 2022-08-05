@@ -50,14 +50,16 @@ export const Navbar = () => {
 
 
   return (
+
     <div className='Contenedor-Navbar'>
 
+      {/* Direcciones para los tabs */}
       <div className='Navbar-1'>  
         <Nav/>
       </div>
 
       <div className='Navbar-3'>
-        <Typography theme={theme} style={{ fontSize: 25, color:'#000000'}}> Rodolfo Cuevas </Typography>
+        <Typography theme={theme} style={{ fontSize: 55, color:'#000000'}}> Rodolfo Cuevas </Typography>
       </div>
 
       <div className='Navbar-2'>

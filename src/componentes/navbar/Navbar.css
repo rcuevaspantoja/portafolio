@@ -3,6 +3,7 @@
 
   display:flex;
   justify-content: space-around;
+  /* background-color: red; */
 }
 
 .Contenedor-Navbar-mobil{
@@ -11,7 +12,7 @@
 
 /* MENÚ */
 .Navbar-1{
-  display: grid;
+  display: none;
   grid-auto-flow: column;
   padding-left: 15px;
   padding-top: 11px;
@@ -38,13 +39,13 @@
 /* REDES */
 .Navbar-2{
   align-items: center;
-  display: flex;
+  display: none;
   justify-content: flex-end;
   padding-top: 11px;
-  padding-right: 3%;
-  min-width: 30%;
-  width: 30%;
+  margin-right: 3%;
+  width: auto;
   min-height: 8vh;
+  background-color: yellow;
 }
 
 /* Rodolfo Cuevas */
@@ -53,9 +54,9 @@
   align-items: center;
   justify-content: center;
   padding-top: 11px;
-  padding-right: 10%;
-  width: 35%;
+  /* padding-right: 10%; */
   min-height: 8vh;
+  /* background-color: green; */
 }
 
 .Navbar-redes{
@@ -100,6 +101,11 @@
     flex-direction: column;
     padding-left: 1% ;
     margin-top: 29px;
+    /* background-color: red; */
+  }
+
+  .Menu-Burger{
+    display: none;
   }
 
   .Hamburgueza{

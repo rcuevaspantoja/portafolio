@@ -19,6 +19,12 @@ function Proyectos() {
   return (
     <div className='AcercaProyectos'>
 
+    <div className='Titulo'>
+      <Typography theme={theme} style={{ fontSize: 35, color:'#000000', textDecoration: 'none'}} > 
+        Experiencias
+      </Typography>
+    </div>
+
 
       <Box className='AcercaProyectos-box'
           sx={{

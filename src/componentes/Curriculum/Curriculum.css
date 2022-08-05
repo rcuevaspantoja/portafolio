@@ -85,11 +85,17 @@
         display: none;
     }
 
+    .Titulo{
+        display: flex;
+        justify-content: center;
+        /* background-color: red; */
+    }
+
     .CurriculumMobil{
         display:flex;
         flex-direction: column;
         justify-content: center;
-        
+        margin-bottom: 25px;
     }
   
     .CurriculumMobil-parte1{
@@ -114,5 +120,6 @@
         padding: 10px;
         margin-left: 6vh;
         margin-right: 6vh;
+        margin-bottom: 50px;
     }
 }
