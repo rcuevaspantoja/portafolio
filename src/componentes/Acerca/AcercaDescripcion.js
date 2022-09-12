@@ -20,13 +20,13 @@ function AcercaDescripcion() {
     <div className='AcercaDescripcion'>
         <div className='AcercaDescripcion-holamundo'>
             <Typography theme={theme} variant='h4'>
-                Hola mundo{emoji.get('earth_americas')},
+                Hola mundo {emoji.get('earth_americas')},
             </Typography>
             <br/>
             <Typography theme={theme} variant='h6'>
-            Soy un recientemente titulado en Ingeniería Civil en Informática, de la Universidad del Bío-Bío. 
-            Y cuento con muchas ganas de poder aprender nuevas tecnologías y mejorarme. Me gusta mucho el frontend 
-            e intento seguir aprendiendo más de él, sin dejar de lado mi interes por el backend y creación de bases de datos.
+            Ingeniero Civil en Informática de la Universidad del Bío-Bío con muchas ganas de seguir aprendiendo y desarrollandome en 
+            nuevas tecnologías para el área de TI. Cuento con gran interés por las bases de datos y el desarrollo web junto con la gestión
+            y la administración.
             </Typography>
         </div>
 

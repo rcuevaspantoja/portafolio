@@ -1,7 +1,7 @@
 
 .Acerca {
     display: flex;
-    min-height: 70vh;
+    min-height: 60vh;
     margin: 20px;
     margin-left: 4%;
     margin-right: 4%;
@@ -15,9 +15,15 @@
     margin-right: 2%;
     min-height: 100%;
     justify-content: center;
+    flex-direction: column;
     /* background-color: blue; */
 }
 
+.AcercaFotoTexto{
+    display: flex;
+    margin-top: 15px;
+    flex-direction: column;
+}
 .AcercaDescripcion{
     display: flex;
     flex-direction: column;
