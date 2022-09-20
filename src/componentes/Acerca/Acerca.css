@@ -10,13 +10,19 @@
 
 .AcercaFoto{
     display: flex;
-    min-width: 30%;
     align-items: center;
+    height: auto;
     margin-right: 2%;
-    min-height: 100%;
+    margin-left: 2%;
     justify-content: center;
     flex-direction: column;
     /* background-color: blue; */
+}
+/*Foto de perfil*/
+.profile-pic{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .AcercaFotoTexto{
@@ -157,6 +163,14 @@
         margin-bottom: 10px;
         margin-top: 0px;
         overflow-y: scroll;
+    }
+
+    /*Foto de perfil*/
+    .profile-pic{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 85%;   
     }
     
 }
