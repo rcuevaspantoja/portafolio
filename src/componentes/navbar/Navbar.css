@@ -40,6 +40,7 @@
 .Navbar-2{
   align-items: center;
   display: flex;
+  width:200px;
   justify-content: flex-end;
   padding-top: 11px;
   /* background-color: yellow; */
