@@ -24,11 +24,6 @@ export const Navbar = () => {
       path: '/proyectos',
       name: 'Proyectos',
       exact: true
-    },
-    {	
-      path: '/curriculum',
-      name: 'Curriculum',
-      exact: true
     }
   ]
 
@@ -36,7 +31,7 @@ export const Navbar = () => {
       <div className='Navegacion'>
         {links.map(({path, name, exact}) => (
         
-          <NavLink theme={theme} key={name}
+          <NavLink theme={theme} key={name} className="no-active"
             style={{ fontSize: 21, color:'#000000', textDecoration: 'none' }} 
             to={path}
             exact={exact}

@@ -6,9 +6,6 @@ import ProyectosMobil from './ProyectosMobil'
 
 function Proyectos() {
 
-
-
-
   return (
     <div className='Proyectos'>
 
@@ -17,5 +14,4 @@ function Proyectos() {
     </div>
   )
 }
-
 export default Proyectos

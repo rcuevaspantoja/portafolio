@@ -19,15 +19,18 @@ function AcercaDescripcion() {
   return (
     <div className='AcercaDescripcion'>
         <div className='AcercaDescripcion-holamundo'>
+            <br/>
             <Typography theme={theme} variant='h4'>
                 Hola mundo {emoji.get('earth_americas')},
-            </Typography>
-            <br/>
+            </Typography>         
             <Typography theme={theme} variant='h6'>
-            Ingeniero Civil en Informática de la Universidad del Bío-Bío con muchas ganas de seguir aprendiendo y desarrollandome en 
-            nuevas tecnologías para el área de TI. Cuento con gran interés por las bases de datos y el desarrollo web junto con la gestión
-            y la administración.
+              Ingeniero Civil en Computación e Informática de la Universidad del Bío-Bío, bilingüe en ingles actualmente dedicandose al área de procesos productivos
+              como Encargado de control en un sistema SCADA y siendo participe de proyectos de automatización de procesos en la 
+              transformación digital para la empresa Orizon S.A, parte del grupo de empresas Copec.<br/>       
+              Cuento con un gran interés para seguir perfeccionandome en el mundo de las tecnologías de información y seguir aprendiendo
+              de tecnología como de desarrollo web.
             </Typography>
+
         </div>
 
         

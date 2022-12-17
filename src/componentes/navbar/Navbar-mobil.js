@@ -50,12 +50,12 @@ export const Navbar = () => {
   }
 
   const menuAbierto = 
-                      <MenuIcon fontSize='large' className='Hamburgueza' 
+                      <MenuIcon sx={{ fontSize: 50 }} className='Hamburgueza' 
                         color='action'
                         onClick={ () => multifuncionAbrir() }
                       />
 
-  const menuCerrado = <CloseIcon fontSize='large' className='Hamburgueza'
+  const menuCerrado = <CloseIcon sx={{ fontSize: 60 }} className='Hamburgueza'
                         color='action'
                         onClick={ () => multifuncionCerrar() }
                       />

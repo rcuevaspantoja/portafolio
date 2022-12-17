@@ -6,9 +6,6 @@ import AcercaFoto from './AcercaFoto'
 
 function Acerca() {
 
-
-
-
   return (
     <div className='Acerca'>
         

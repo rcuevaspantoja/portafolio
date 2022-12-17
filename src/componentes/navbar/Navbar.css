@@ -1,51 +1,48 @@
 /* ESTILOS NAVBAR-NORMAL */
 .Contenedor-Navbar{
-
   display:flex;
-  justify-content: space-around;
   /* background-color: red; */
+  justify-content: space-between;
 }
 
 .Contenedor-Navbar-mobil{
   display: none;
 }
 
-/* MENÚ */
+/* MENÚ CON OPCIONES PARA NAVEGAR*/
 .Navbar-1{
-  display: none;
+  display: flex;
   grid-auto-flow: column;
-  padding-left: 15px;
-  padding-top: 11px;
   align-items: center;
-  min-width: 35%;
+  /* background-color: brown; */
 }
 
+/*ESTILOS DE LO QUE VA DENTRO DE NAVBAR-1*/
 .Navegacion{
   display: flex;
-  /*este width define el largo de la barra de navegacion*/
-  width: 300px;
-  justify-content: space-between;
-  padding-left: 25px;
-  padding-right: 25px;
-}
+  width: 200px;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 10px;
+  /* background-color: aqua; */
+} 
 
+/*ESTILO PARA CUANDO LOS BOTONES DE NAV. ESTEN ACTIVADOS O NO LO ESTEN*/
+.no-active{
+  padding: 5px;
+}
 .active{
   border-radius: 7px;
-  padding-left: 6px;
-  padding-right: 6px;
   background-color: #e6e6e6;
 }
 
 /* REDES */
 .Navbar-2{
   align-items: center;
-  display: none;
+  display: flex;
   justify-content: flex-end;
   padding-top: 11px;
-  margin-right: 3%;
-  width: auto;
-  min-height: 8vh;
-  background-color: yellow;
+  /* background-color: yellow; */
 }
 
 /* Rodolfo Cuevas */
@@ -53,9 +50,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 11px;
-  /* padding-right: 10%; */
-  min-height: 8vh;
   /* background-color: green; */
 }
 
@@ -105,13 +99,15 @@
   }
 
   .Menu-Burger{
-    display: none;
+    display:flex;
+    flex-direction: column;
   }
 
   .Hamburgueza{
     display: flex;
     position: absolute;
-    right: 5%;
+    margin-top: -55px ;
+    left: 5%;
   }
 
   .Navbar-1-mobil{

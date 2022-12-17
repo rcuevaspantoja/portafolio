@@ -12,11 +12,10 @@ function App() {
       
       <BrowserRouter>
 
-          <Navbar/>
-
-          <Acerca />
-          <Proyectos />
-          <Curriculum />
+        <Navbar/>
+        <Acerca />
+        <Proyectos />
+        <Curriculum />
           
       </BrowserRouter>
 	  </div>

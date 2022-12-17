@@ -5,7 +5,6 @@ import { createTheme } from '@material-ui/core/styles';
 import './Proyectos.css'
 
 function ProyectosNormal() {
-
   const theme = createTheme({
     typography: {
       fontFamily: [
@@ -13,7 +12,6 @@ function ProyectosNormal() {
         'sans-serif',
       ].join(','),
   },});
-
 
   return (
     <div className='Proyectonormal'>
@@ -34,15 +32,11 @@ function ProyectosNormal() {
                 <Typography theme={theme} variant='h6' color="common.white"> Mayo-2022 al Presente </Typography>
             </div>   
             <div className='Descripcion-Empleo'>
-              <Typography theme={theme} variant='h4' color="common.white"> Operador de Automatización en Orizon S.A </Typography> <br />
+              <Typography theme={theme} variant='h4' color="common.white"> Encargado de sistema SCADA en Orizon S.A </Typography> <br />
             </div>             
-
         </Box>
       </div>
     </div>
-
-
   )
 }
-
 export default ProyectosNormal
