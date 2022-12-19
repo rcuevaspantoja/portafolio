@@ -11,22 +11,24 @@
     margin-left: 25vh;
     margin-right: 25vh;
     justify-content: center;
+    /* border: 3px solid black; */
+    padding-left: 70px;
 }
 
 .CurriculumNormal-parte1{
     display: flex;
-    min-width: 60vh;
     justify-content: center;
     align-items: center;
+    /* border: 3px solid black; */
 }
 
 
 .CurriculumNormal-parte2{
     display:flex;
-    min-width: 70vh;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+   /*  border: 3px solid red; */
 }
 
 .hablamos{
@@ -72,13 +74,18 @@
     align-items: center;
 }
 
+.Curriculum-imagen{
+    display:flex;
+    height: auto;
+}
+
 .CurriculumMobil{
     display: none;
 }
 
 /*VERSION MOBIL*/
 
-@media (max-width : 1150px){
+@media (max-width : 1300px){
 
     .CurriculumNormal{
         display: none;
