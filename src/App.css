@@ -6,3 +6,10 @@ html,body, #root {
   min-height: 100vh;
   background-color: rgb(255, 255, 255);
 }
+
+.todo-contenido{
+  
+  max-width: 2000px;
+  /* background-color: red; */
+  margin: 0px auto;
+}

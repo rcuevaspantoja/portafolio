@@ -13,9 +13,12 @@ function App() {
       <BrowserRouter>
 
         <Navbar/>
-        <Acerca />
-        <Proyectos />
-        <Curriculum />
+        <div className='todo-contenido'>
+          <Acerca />
+          <Proyectos />
+          <Curriculum />
+        </div>
+
           
       </BrowserRouter>
 	  </div>
