@@ -1,5 +1,5 @@
 # Proyecto: Portafolio
 
-5% de 100 de lo que será mi página web.
+Proyecto que busca servir como portafolio para mi curriculum, experiencias laborales, proyectos, etc. Buscando así conectar con más personas para ampliar mi red.
 
 
