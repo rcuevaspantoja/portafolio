@@ -18,7 +18,8 @@
     "react-router-dom": "^6.2.2",
     "react-scripts": "5.0.0",
     "react-spring": "^9.4.4",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "wouter": "^2.10.0-alpha.1"
   },
   "scripts": {
     "start": "react-scripts start",

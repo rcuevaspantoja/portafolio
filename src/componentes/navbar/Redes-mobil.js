@@ -7,9 +7,9 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 export const RedesMobil = (props) => {
 
-    const [hoverInstagram, setHoverInstagram] = useState(false);
-    const [hoverTwitter, setHoverTwitter] = useState(false);
-    const [hoverLinkedIn, setHoverLinkedIn] = useState(false);
+    const [/* hoverInstagram,  */setHoverInstagram] = useState(false);
+    const [/* hoverTwitter,  */setHoverTwitter] = useState(false);
+    const [/* hoverLinkedIn,  */setHoverLinkedIn] = useState(false);
 
     const onHoverInstagram = () => {
         setHoverInstagram(true);
