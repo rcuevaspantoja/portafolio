@@ -2,7 +2,6 @@ import './App.css';
 import React from 'react';
 import Navbar from './componentes/navbar/Navbar'
 import {
-  BrowserRouter,
   Route,
   Routes,
 } from "react-router-dom";
@@ -12,12 +11,13 @@ import Proyectos from './componentes/Proyectos/Proyectos'
 
 function App() {
   return (    
-      <BrowserRouter>
+    
+/*    <BrowserRouter>
         <div className="App">
           <Navbar/>
           <Routes>
 
-            <Route path="/acerca">
+            <Route path="/">
               <div className='todo-contenido'>
                 <Acerca />
                 <Proyectos />
@@ -28,7 +28,22 @@ function App() {
           </Routes>  
 
         </div>       
-      </BrowserRouter>
+      </BrowserRouter> */
+
+
+
+
+  <>
+  
+    <Navbar/>
+
+    <div className="App">
+      <Routes>
+        <Route path={"/"} element={<Acerca />} />
+      </Routes>
+    </div>  
+      
+  </>
 
 
   );
