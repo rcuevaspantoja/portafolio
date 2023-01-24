@@ -1,17 +1,9 @@
+
 import React from 'react'
-import './Proyectos.css'
-import ProyectosNormal from './ProyectosNormal'
-import ProyectosMobil from './ProyectosMobil'
-
-
-function Proyectos() {
-
+import ProyectoNormal from './ProyectosNormal'
+export default function Proyectos() {
+    
   return (
-    <div className='Proyectos'>
-
-      <ProyectosNormal/>
-      <ProyectosMobil/>
-    </div>
+    <ProyectoNormal/>
   )
 }
-export default Proyectos

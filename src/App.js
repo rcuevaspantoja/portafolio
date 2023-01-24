@@ -8,7 +8,7 @@ import {
 } from "react-router-dom";
 import Acerca from './componentes/Acerca/Acerca'
 import Curriculum from './componentes/Curriculum/Curriculum'
-import Proyectos from './componentes/Proyectos/Proyectos'
+import Experiencias from './componentes/Experiencia/Experiencias'
 import ProyectosPersonales from './componentes/Proyectos-mios/Proyectos'
 
 function App() {
@@ -22,7 +22,7 @@ function App() {
       <Routes>
         /*Se desplaza desde el path / al Acerca donde se encuentra la página */
         <Route path='/' element={ <Navigate to="/Acerca" /> }/>
-        <Route path={"/Acerca"} element={<><Acerca /><Curriculum /><Proyectos /></>} />
+        <Route path={"/Acerca"} element={<><Acerca /><Curriculum /><Experiencias /></>} />
         <Route path={"/proyectos"} element={<ProyectosPersonales />} />
       </Routes>
     </div>  
