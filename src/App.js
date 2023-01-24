@@ -15,9 +15,7 @@ function App() {
   return (    
     
   <>
-  
     <Navbar/>
-
     <div className="App">
       <Routes>
         /*Se desplaza desde el path / al Acerca donde se encuentra la página */
@@ -25,11 +23,8 @@ function App() {
         <Route path={"/Acerca"} element={<><Acerca /><Curriculum /><Proyectos /></>} />
         <Route path={"/proyectos"} element={<ProyectosPersonales />} />
       </Routes>
-    </div>  
-      
+    </div>      
   </>
-
-
   );
 }
 export default App;

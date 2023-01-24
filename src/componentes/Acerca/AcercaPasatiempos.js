@@ -36,7 +36,7 @@ function AcercaPasatiempos() {
 
     const aprender = () => {
         setEmojiPasatiempo('books');
-        setDescripcionPasatiempo('He logrado aprender mucho de manera autónoma y lo he terminado haciendo un pasatiempo. Desde poder aprender lenguajes de programación de manera autodidacta hasta aprender el cómo funcionan los grupos musculares para poder rendir mejor en el gimnasio. Aprender se ha vuelto muy emocionante para mí y lo considero un pasatiempo, porque gracias a fuentes como Youtube siempre se puede estar aprendiendo. ')
+        setDescripcionPasatiempo('Constantemente estoy realizando problemas de programación de grandes empresas de TI para seguir mejorando mi lógica de programación. Cuento con más de 50 problemas y aumentando!, ya que es algo que me gusta realizar. Es una especie de sopa de letras para programadores')
     }
 
   return (
