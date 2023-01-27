@@ -1,5 +1,3 @@
 # Proyecto: Portafolio
 
-Proyecto que busca servir como portafolio para mi curriculum, experiencias laborales, proyectos, etc. Buscando así conectar con más personas para ampliar mi red.
-
-
+Repositorio que almacena el código para mi portafolio personal donde busco plasmar mi estilo y gustos en un portafolio de programador por medio de una aplicación web en React.
