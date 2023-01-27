@@ -9,7 +9,7 @@ import {
 import Acerca from './componentes/Acerca/Acerca'
 import Curriculum from './componentes/Curriculum/Curriculum'
 import Experiencias from './componentes/Experiencia/Experiencias'
-import ProyectosPersonales from './componentes/Proyectos-mios/Proyectos'
+import ProyectosPersonales from './componentes/Proyectos/Proyectos'
 
 function App() {
   return (    
@@ -18,7 +18,7 @@ function App() {
     <Navbar/>
     <div className="App">
       <Routes>
-        /*Se desplaza desde el path / al Acerca donde se encuentra la página */
+        {/*Se desplaza desde el path / al Acerca donde se encuentra la página */}
         <Route path='/' element={ <Navigate to="/Acerca" /> }/>
         <Route path={"/Acerca"} element={<><Acerca /><Curriculum /><Experiencias /></>} />
         <Route path={"/proyectos"} element={<ProyectosPersonales />} />

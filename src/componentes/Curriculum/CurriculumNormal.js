@@ -15,17 +15,17 @@ function CurriculumNormal() {
 
   return (
 
-    <animated.div style={springCurriculum} className='CurriculumNormal'>
+    <div className='CurriculumNormal'>
         
         <div  className='CurriculumNormal-parte1'>
             <DescargarCV />
         </div>
 
-        <div style={springCurriculum} className='CurriculumNormal-parte2'>
+        <div className='CurriculumNormal-parte2'>
             <InformacionAdicional/>
         </div>
 
-    </animated.div>
+    </div>
   )
 }
 

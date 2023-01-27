@@ -1,0 +1,18 @@
+.Proyectos{
+    display: flex;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 4%;
+}
+
+.Titulo{
+    margin-top: 4%;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.Card{
+    display:flex;
+    margin: 20px;
+    box-shadow: 10px 10px 5px 2px lightblue;
+}
