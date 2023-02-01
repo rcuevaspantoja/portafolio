@@ -21,7 +21,7 @@ function App() {
         {/*Se desplaza desde el path / al Acerca donde se encuentra la página */}
         <Route path='/' element={ <Navigate to="/Acerca" /> }/>
         <Route path={"/Acerca"} element={<><Acerca /><Curriculum /><Experiencias /></>} />
-        <Route path={"/proyectos"} element={<ProyectosPersonales />} />
+        {/* <Route path={"/proyectos"} element={<ProyectosPersonales />} /> */}
       </Routes>
     </div>      
   </>
