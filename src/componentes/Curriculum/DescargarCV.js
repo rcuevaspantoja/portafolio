@@ -90,7 +90,7 @@ function DescargarCV() {
       >
       </img>
         <ImageBackdrop className="MuiImageBackdrop-root" />
-          <a href={require("../../archivos/CV_Rodolfo_2021.pdf")} download="Curriculum-RodolfoCuevas.pdf">
+          <a href={require("../../archivos/Curriculum_2023.pdf")} download="Curriculum-RodolfoCuevas.pdf">
           <Image>
               <Typography
                 component="span"

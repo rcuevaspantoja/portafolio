@@ -2,7 +2,10 @@ import React from 'react'
 import DescargarCV from './DescargarCV'
 import InformacionAdicional from './InformacionAdicional'
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 9d97a9a74bd05969f67cc7bc021be42d4014e9e4
 function CurriculumNormal() {
 
   return (
