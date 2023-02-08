@@ -11,16 +11,16 @@ export default function Proyectos() {
     
   const fuentes = [
     {
-      nombre: 'Calculadora de tiempo',
-      ruta: 'https://google.com',
-      imagen: 'https://thumbs.dreamstime.com/z/c%C3%B3mo-calcular-nuestro-tiempo-imagen-de-reloj-y-calculadora-sobre-fondo-blanco-181705459.jpg',
-      descripcion: 'Calculadora para poder restar y sumar horas en formato reloj.' 
+      nombre: 'Web con información de Peliculas y Series',
+      ruta: 'https://github.com/rcuevaspantoja/Informacion-Peliculas',
+      imagen: 'https://raw.githubusercontent.com/rcuevaspantoja/Informacion-Peliculas/main/src/imagenes/Capturas/captura_todo.png',
+      descripcion: 'Sitio web en React con consumo de API para postular a Jr Dev' 
     },
     {
-      nombre: 'Gameboy Advance Modificada',
-      ruta: ' ',
-      imagen: 'https://i.pinimg.com/originals/3b/5f/7e/3b5f7ecbafc3c902334595cae78da2fa.jpg',
-      descripcion: 'Con un amor por la tecnología de antaño me adentro en las modificaciones para darle una nueva vida a consolas antiguas.'
+      nombre: 'Enlaces de biografía para psicologa online',
+      ruta: 'https://github.com/rcuevaspantoja/Biolinks-PsValentinaMoyano',
+      imagen: 'https://raw.githubusercontent.com/rcuevaspantoja/Biolinks-PsValentinaMoyano/master/src/archivos/Capturas/Screenshot_2.png',
+      descripcion: 'Sitio web en React para la biografia de la psicologa online Valentina Moyano'
     }
   ]
 
@@ -29,14 +29,15 @@ export default function Proyectos() {
       {fuentes.map(({nombre, ruta, imagen, descripcion}) => (
         <div className='Card'>
           <Card sx={{ maxWidth: 345 }}>
-          <CardActionArea>
-            <CardMedia
+          <CardActionArea href={ruta} target="_blank">
+            <CardMedia 
               component="img"
               height="140"
               image={imagen}
               alt={nombre}
+              
             />
-            <CardContent>
+            <CardContent style={{backgroundColor: "white bone"}}>
               <Typography gutterBottom variant="h5" component="div">
                 {nombre}
               </Typography>

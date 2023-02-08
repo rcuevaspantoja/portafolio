@@ -14,5 +14,11 @@
 .Card{
     display:flex;
     margin: 20px;
-    box-shadow: 10px 10px 5px 2px lightblue;
+    box-shadow: 10px 10px 5px 2px rgb(255, 255, 255);
+    /* border: 3px solid black; */
+}
+
+.Card:hover {
+    
+    box-shadow: 5px 5px 5px 2px rgb(195, 240, 255);
 }
