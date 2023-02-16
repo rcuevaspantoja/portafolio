@@ -15,7 +15,7 @@ export default function Proyectos() {
     {
       nombre: 'Portafolio de presentación mía y proyectos',
       ruta: 'https://portafolio-tan.vercel.app/acerca',
-      imagen: '',
+      imagen: 'https://raw.githubusercontent.com/rcuevaspantoja/portafolio/master/src/archivos/miniatura-portafolio.png?token=GHSAT0AAAAAAB63BCMFQNRQSPTFPPVYM2B4Y7OL5RQ',
       descripcion: 'Portafolio donde se almacenará la gran parte de mis proyectos de programación y CV',
       tecnologias: <> <SiReact/> <SiJavascript/> <SiCss3/> </> 
     },
