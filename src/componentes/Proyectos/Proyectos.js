@@ -13,6 +13,13 @@ export default function Proyectos() {
     
   const fuentes = [
     {
+      nombre: 'Portafolio de presentación mía y proyectos',
+      ruta: 'https://portafolio-tan.vercel.app/acerca',
+      imagen: '',
+      descripcion: 'Portafolio donde se almacenará la gran parte de mis proyectos de programación y CV',
+      tecnologias: <> <SiReact/> <SiJavascript/> <SiCss3/> </> 
+    },
+    {
       nombre: 'Web con información de Peliculas y Series',
       ruta: 'https://github.com/rcuevaspantoja/Informacion-Peliculas',
       imagen: 'https://raw.githubusercontent.com/rcuevaspantoja/Informacion-Peliculas/main/src/imagenes/Capturas/captura_todo.png',
