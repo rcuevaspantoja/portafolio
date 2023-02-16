@@ -12,3 +12,6 @@ El desarrollo de este programo ha sido sacarme de lo que suelo estar acostumbrad
 
 #Futures
 Me gustaría a futuro poder implementar una versión traducida al ingles de este mismo sitio web
+
+#Imagenes
+![alt text](https://github.com/rcuevaspantoja/portafolio/blob/master/src/archivos/miniatura-portafolio.png)
