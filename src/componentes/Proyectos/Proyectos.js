@@ -30,7 +30,7 @@ export default function Proyectos() {
       nombre: 'Problemas de programación para entrevistas',
       ruta: 'https://github.com/rcuevaspantoja/problemas-entrevistas',
       imagen: 'http://s3.amazonaws.com/cb-talent-development-cortex-prod/media/attachments/000/001/682/original/shutterstock_248597491_IntTest.jpg?1452861845',
-      descripcion: 'Repositorio de preguntas de nivel medio para empresas tipo FAANG traducidas y resueltas por mi',
+      descripcion: 'Repositorio de preguntas de nivel medio para empresas tipo FAANG traducidas por mi',
       tecnologias: <> <SiJavascript/> </>
     }
   ]
