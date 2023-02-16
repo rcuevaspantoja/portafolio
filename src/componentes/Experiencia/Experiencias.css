@@ -1,7 +1,14 @@
 /* Version de Escritorio */
 
-.divExperiencias{
-    /* border: 3px solid black ; */
+.Experiencias{
+    display:flex;
+    margin-top:30px;
+    justify-content: center;
+}
+
+.titulo-experiencias{
+    display:flex;
+    align-items: center;
 }
 
 .AcercaExperiencias{
@@ -17,7 +24,7 @@
     display: flex;
     border-radius: 20px;
     flex-direction: column;
-    max-width: 500px;
+    max-width: 400px;
     min-height: 300px;
     margin-bottom: 35px;
     background: linear-gradient(to bottom, #0075cf 0%, #1ececb 100%);
@@ -39,15 +46,22 @@
     display:none;
 }
 
+.titulo-2{
+    display:flex;
+    justify-content: center;
+}
+
 
 /* Version Mobil */
 
 @media (max-width : 1150px){
 
-    .Proyectonormal{
+    .divExperiencias{
         display: none
     }
-
+    .Proyectomobil{
+        display:show;
+    }
     .Proyectomobil{
         display: flex;
         flex-direction: column;

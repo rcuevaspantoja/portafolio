@@ -36,7 +36,7 @@ function AcercaPasatiempos() {
 
     const aprender = () => {
         setEmojiPasatiempo('books');
-        setDescripcionPasatiempo('Constantemente estoy realizando problemas de programación de grandes empresas de TI para seguir mejorando mi lógica de programación. Cuento con más de 50 problemas y aumentando!, ya que es algo que me gusta realizar. Es una especie de sopa de letras para programadores')
+        setDescripcionPasatiempo('Una de las actividades de las que más disfruto es el aprender constantemente de cosas que me van llamando la antención. Estos últimos meses he aprendido bastante de circuitos y a soldar para poder reparar articulos electronicos antiguos que he ido comprando rotos para luego vender sacando una ganancia.')
     }
 
   return (

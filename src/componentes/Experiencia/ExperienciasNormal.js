@@ -15,7 +15,7 @@ function ExperienciasNormal() {
 
   return (
     <div className='divExperiencias'>
-        <div className='Titulo'>
+        <div className='titulo-2'>
           <Typography theme={theme} style={{ fontSize: 45, color:'#000000', textDecoration: 'none'}} > 
             Experiencias
           </Typography>

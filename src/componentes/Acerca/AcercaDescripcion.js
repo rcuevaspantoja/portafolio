@@ -24,17 +24,12 @@ function AcercaDescripcion() {
                 Hola mundo {emoji.get('earth_americas')},
             </Typography>         
             <Typography theme={theme} variant='h6'>
-              Ingeniero Civil en Computación e Informática de la Universidad del Bío-Bío, bilingüe en ingles actualmente dedicandose al área de procesos productivos
+              Me llamo Rodolfo y soy Ingeniero Civil en Computación e Informática de la Universidad del Bío-Bío, bilingüe en ingles actualmente dedicandose al área de procesos productivos
               como Encargado de control en un sistema SCADA y siendo participe de proyectos de automatización de procesos en la 
               transformación digital para la empresa Orizon S.A, parte del grupo de empresas Copec.      
               Cuento con un gran interés para seguir perfeccionandome en el mundo de las tecnologías de información y seguir aprendiendo
               de tecnología como de desarrollo web.
             </Typography>
-            <Typography theme={theme} variant='h6'>
-              <br/>Una de las actividades de las que más disfruto es el aprender constantemente de cosas que me van llamando la antención. Estos últimos meses he aprendido 
-              bastante de circuitos y a soldar para poder reparar articulos electronicos antiguos que he ido comprando rotos para luego vender sacando una ganancia.
-            </Typography>
-
         </div>
 
         

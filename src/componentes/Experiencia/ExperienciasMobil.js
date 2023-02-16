@@ -18,9 +18,6 @@ function Experienciasmobil() {
 
   return (
     <div className='Proyectomobil'>
-
-
-
     <div className='Titulo'>
           <Typography theme={theme} style={{ fontSize: 45, color:'#000000', textDecoration: 'none'}} > 
             Experiencias
@@ -42,12 +39,7 @@ function Experienciasmobil() {
             </div>             
 
         </Box>
-      </div>
-
-
-
-
-        
+      </div>     
     </div>
   )
 }
