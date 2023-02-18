@@ -24,6 +24,11 @@ export const Navbar = () => {
       path: '/proyectos',
       name: 'Proyectos',
       exact: true
+    },
+    {
+      path: '/curriculum',
+      name: 'Curriculum',
+      exact: true
     }
   ]
 
