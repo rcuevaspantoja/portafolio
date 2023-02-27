@@ -7,6 +7,7 @@ import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
 import { SiJavascript, SiReact, SiCss3 } from 'react-icons/si';
+import ReactCardCarousel from 'react-card-carousel';
 /** https://react-icons.github.io/react-icons << iconos */
 
 export default function Proyectos() {
@@ -43,38 +44,75 @@ export default function Proyectos() {
   ]
 
   return (
-    <div className='Proyectos'>
-      {fuentes.map(({nombre, ruta, imagen, descripcion, tecnologias}) => (
-        <div className='Card'>
-          <Card sx={{ maxWidth: 345 }}>
-          <CardActionArea href={ruta} target="_blank">
-            <CardMedia 
-              component="img"
-              height="140"
-              image={imagen}
-              alt={nombre}             
-            />
-            <CardContent style={{backgroundColor: "white bone"}}>
-              <Typography gutterBottom variant="h5" component="div">
-                {nombre}
-              </Typography>
-
-              <Typography variant="body2" color="text.secondary">
-                {descripcion}
-              </Typography>
-
-              <div className='proyectoTecnologias'>
-                <Typography variant="h5">
-                  <hr/>
-                  {tecnologias}
+    <>
+      <div className='Proyectos'>
+        {fuentes.map(({nombre, ruta, imagen, descripcion, tecnologias}) => (
+          <div className='Card'>
+            <Card sx={{ maxWidth: 345 }}>
+            <CardActionArea href={ruta} target="_blank">
+              <CardMedia 
+                component="img"
+                height="140"
+                image={imagen}
+                alt={nombre}             
+              />
+              <CardContent style={{backgroundColor: "white bone"}}>
+                <Typography gutterBottom variant="h5" component="div">
+                  {nombre}
                 </Typography>
-              </div>
 
-            </CardContent>
-          </CardActionArea>
-          </Card>
-        </div>
-      ))}
-    </div>
+                <Typography variant="body2" color="text.secondary">
+                  {descripcion}
+                </Typography>
+
+                <div className='proyectoTecnologias'>
+                  <Typography variant="h5">
+                    <hr/>
+                    {tecnologias}
+                  </Typography>
+                </div>
+
+              </CardContent>
+            </CardActionArea>
+            </Card>
+          </div>
+        ))}
+      </div>
+      <div className='ProyectosMobil'>
+        <ReactCardCarousel autoplay={ true } autoplay_speed={ 2500 }>
+
+        {fuentes.map(({nombre, ruta, imagen, descripcion, tecnologias}) => (
+          <div className='Card'>
+            <Card sx={{ maxWidth: 345 }}>
+            <CardActionArea href={ruta} target="_blank">
+              <CardMedia 
+                component="img"
+                height="140"
+                image={imagen}
+                alt={nombre}             
+              />
+              <CardContent style={{backgroundColor: "white bone"}}>
+                <Typography gutterBottom variant="h5" component="div">
+                  {nombre}
+                </Typography>
+
+                <Typography variant="body2" color="text.secondary">
+                  {descripcion}
+                </Typography>
+
+                <div className='proyectoTecnologias'>
+                  <Typography variant="h5">
+                    <hr/>
+                    {tecnologias}
+                  </Typography>
+                </div>
+              </CardContent>
+            </CardActionArea>
+            </Card>
+          </div>
+          ))}
+        </ReactCardCarousel>
+      </div>
+    </>
   )
 }
