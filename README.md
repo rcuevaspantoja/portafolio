@@ -1,7 +1,7 @@
 # Portafolio (en desarrollo)
 
-#Introducción
-Repositorio que contiene información en detalle de mi persona, trabajos e intereces para facilitar las contrataciones a futuros trabajos o proyectos. Este se encuentra en este momento en desarrollo
+# Introducción
+Página web que contiene información en detalle de mi persona, trabajos e intereces para facilitar las contrataciones a futuros trabajos o proyectos. Este se encuentra ede momento en una etapa de desarrollo inicial, esperando a futuro hacerlo más complejo y disponible para una versión en ingles
 
 # Estado Actual ETAPA 1 DE 3
 - Etapa 1: Buscar un diseño con el que me sienta comodo
