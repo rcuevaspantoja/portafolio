@@ -1,6 +1,7 @@
 import './App.css';
 import React from 'react';
 import Navbar from './componentes/navbar/Navbar'
+import Footer from './componentes/Footer/Footer'
 import {
   Route,
   Routes,
@@ -34,7 +35,9 @@ function App() {
         {/* <Route path={"/curriculum"} element={ <PDFViewer> <CV/> </PDFViewer> }/> */}
         <Route path={"/curriculum"} element={<></>} />
       </Routes>
-    </animated.div>   
+    </animated.div>
+    <Footer/>
+     
   </>
   );
 }

@@ -6,8 +6,9 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
+import minPortafolio from '../../archivos/miniatura-portafolio.png'
 import { SiJavascript, SiReact, SiCss3 } from 'react-icons/si';
-import Carousel from 'better-react-carousel';
+
 /** https://react-icons.github.io/react-icons << iconos */
 
 export default function Proyectos() {
@@ -16,7 +17,7 @@ export default function Proyectos() {
     {
       nombre: 'Portafolio de presentación mía y proyectos',
       ruta: 'https://github.com/rcuevaspantoja/portafolio',
-      imagen: 'https://raw.githubusercontent.com/rcuevaspantoja/portafolio/master/src/archivos/miniatura-portafolio.png?token=GHSAT0AAAAAAB63BCMEECXLCVGGPJAFNGUEY7OO6FQ',
+      imagen: minPortafolio,
       descripcion: 'Portafolio donde se almacenará la gran parte de mis proyectos de programación y CV',
       tecnologias: <> <SiReact/> <SiJavascript/> <SiCss3/> </> 
     },
@@ -45,10 +46,11 @@ export default function Proyectos() {
 
   return (
     <>
-{/*       <div className='Proyectos'>
+      
+      <div className='Proyectos'>
         {fuentes.map(({nombre, ruta, imagen, descripcion, tecnologias}) => (
           <div className='Card'>
-            <Card sx={{ maxWidth: 345 }}>
+            <Card>
             <CardActionArea href={ruta} target="_blank">
               <CardMedia 
                 component="img"
@@ -77,69 +79,6 @@ export default function Proyectos() {
             </Card>
           </div>
         ))}
-      </div> */}
-      <div className='ProyectosMobil'>
-
-
-
-
-
-          <Carousel cols={3} rows={1} gap={10} loop>
-
-
-
-          {fuentes.map(({nombre, ruta, imagen, descripcion, tecnologias}) => (
-            <Carousel.Item>
-              <div className='Card'>
-                <Card sx={{ Width: 150 }}>
-                <CardActionArea href={ruta} target="_blank">
-                  <CardMedia 
-                    component="img"
-                    height="140"
-                    image={imagen}
-                    alt={nombre}             
-                  />
-                  <CardContent style={{backgroundColor: "white bone"}}>
-                    <Typography gutterBottom variant="h5" component="div">
-                      {nombre}
-                    </Typography>
-
-                    <Typography variant="body2" color="text.secondary">
-                      {descripcion}
-                    </Typography>
-
-                    <div className='proyectoTecnologias'>
-                      <Typography variant="h5">
-                        <hr/>
-                        {tecnologias}
-                      </Typography>
-                    </div>
-
-                  </CardContent>
-                </CardActionArea>
-                </Card>
-              </div>
-            </Carousel.Item>
-        ))}
-
-
-
-
-          </Carousel>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
       </div>
     </>
   )
