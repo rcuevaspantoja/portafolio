@@ -1,7 +1,7 @@
 import './App.css';
 import React from 'react';
 import Navbar from './componentes/navbar/Navbar'
-import Footer from './componentes/Footer/Footer'
+import FooterComponente from './componentes/Footer/Footer'
 import {
   Route,
   Routes,
@@ -24,7 +24,7 @@ function App() {
 
   return (      
     
-  <>
+  <div className='Base'>
     <Navbar/>
     <animated.div style={springCurriculum2} className="App">
       <Routes>
@@ -36,9 +36,12 @@ function App() {
         <Route path={"/curriculum"} element={<></>} />
       </Routes>
     </animated.div>
-    <Footer/>
-     
-  </>
+
+    <footer>
+      <FooterComponente/>
+    </footer>
+ 
+  </div>
   );
 }
 export default App;
