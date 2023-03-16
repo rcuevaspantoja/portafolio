@@ -12,7 +12,15 @@ function AcercaPasatiempos() {
             'Varela Round',
             'sans-serif',
           ].join(','),
-    },});
+    },
+        palette: {
+            primary:{
+                main: '#050505',
+            } ,
+        }, 
+}
+    
+    );
 
     var emoji = require('node-emoji')
 
@@ -42,12 +50,15 @@ function AcercaPasatiempos() {
   return (
     <div className='AcercaPasatiempos'>
 
-
+   
         <Box className='AcercaPasatiempos-box'
             sx={{
                 width: '100%',
                 height: '100%',
-                backgroundColor: '#e6e6e6',
+                borderTop: 2,
+                borderBottom: 2,
+                borderColor: "#050505"
+                /* backgroundColor: '#FFFFFF', */
             }}>
 
             <div className='AcercaPasatiempos-pasatiempos'>
@@ -55,10 +66,10 @@ function AcercaPasatiempos() {
             </div>        
 
             <div className='AcercaPasatiempos-botones'>
-                <Button className='AcercaPasatiempos-botones-hijo' variant="contained" color='info' onClick={gimnasio}>Gimnasio</Button>
-                <Button className='AcercaPasatiempos-botones-hijo' variant="contained" color='info' onClick={fotografia}>Fotografía</Button>
-                <Button className='AcercaPasatiempos-botones-hijo' variant="contained" color='info' onClick={teclados}>Teclados</Button>
-                <Button className='AcercaPasatiempos-botones-hijo' variant="contained" color='info' onClick={aprender}>Aprender</Button>
+                <Button theme={theme} className='AcercaPasatiempos-botones-hijo' variant="contained" onClick={gimnasio}>Gimnasio</Button>
+                <Button theme={theme} className='AcercaPasatiempos-botones-hijo' variant="contained" onClick={fotografia}>Fotografía</Button>
+                <Button theme={theme} className='AcercaPasatiempos-botones-hijo' variant="contained" onClick={teclados}>Teclados</Button>
+                <Button theme={theme} className='AcercaPasatiempos-botones-hijo' variant="contained" onClick={aprender}>Aprender</Button>
             </div>   
 
             <div className='AcercaPasatiempos-descripcion'>
@@ -67,7 +78,7 @@ function AcercaPasatiempos() {
                 </Typography>   
             </div>  
         </Box>
-
+      
     </div>
   )
 }

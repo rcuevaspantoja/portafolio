@@ -21,7 +21,7 @@ function Footer() {
 
         <img src={Memoji} alt="Memoji" align="center" className="Memoji"/>
         <Typography theme={theme} align="center">
-        Esta página está en constante cambio en busca de sentirme lo más cómodo posible.
+        Esta página está en constante cambio, me gusta ir probando cosas nuevas y reflejarlas acá.
         </Typography>
       </div>
     </div>
