@@ -1,5 +1,6 @@
 html,body, #root {
   height: 100%;
+  background-color: rgb(246, 243, 237);
 }
 
 .App {
@@ -8,9 +9,4 @@ html,body, #root {
   max-width: 1920px;
   margin: 0 auto;
   
-}
-
-.Base{
-  /* background-color: rgb(193, 193, 193); */
-  background-color: rgb(246, 243, 237);
 }

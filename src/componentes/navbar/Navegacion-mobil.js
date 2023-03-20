@@ -1,6 +1,7 @@
 import React from 'react'
 import { createTheme } from '@material-ui/core/styles';
 import { Link } from "react-router-dom";
+import PDF from '../../archivos/Curriculum_2023.pdf'
 
 export const NavegacionMobil = (props) =>{
 
@@ -17,22 +18,23 @@ export const NavegacionMobil = (props) =>{
       <>
 
         <Link  theme={theme} 
-          style={{ fontSize: 22, color:'#000000', textDecoration: 'none'}} 
+          style={{ fontSize: 25, color:'#000000', textDecoration: 'none'}} 
           to="/acerca" 
           onClick={ () => props.isMobile && props.cerrarMenuMobil() && props.cambiarTitulo('Acerca') }>
             {'Acerca'}
         </Link>
 
         <Link theme={theme} 
-          style={{ fontSize: 22, color:'#000000', textDecoration: 'none'}} 
+          style={{ fontSize: 25, color:'#000000', textDecoration: 'none'}} 
           to="/proyectos" 
           onClick={ () => props.isMobile && props.cerrarMenuMobil() }>
             Proyectos
         </Link>
       
         <Link theme={theme} 
-          style={{ fontSize: 22, color:'#000000', textDecoration: 'none'}} 
-          to="/curriculum" 
+          style={{ fontSize: 25, color:'#000000', textDecoration: 'none'}} 
+          to= { PDF }
+          target = "_blank"
           onClick={ () => props.isMobile && props.cerrarMenuMobil() }>
             Curriculum
         </Link>

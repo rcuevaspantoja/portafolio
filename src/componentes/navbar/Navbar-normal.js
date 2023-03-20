@@ -3,6 +3,7 @@ import Typography from '@mui/material/Typography';
 import Redes from './Redes'
 import { createTheme } from '@material-ui/core/styles';
 import { NavLink } from "react-router-dom";
+import PDF from '../../archivos/Curriculum_2023.pdf'
 
 export const Navbar = () => {
 
@@ -18,28 +19,32 @@ export const Navbar = () => {
     {
       path: '/acerca',
       name: 'Acerca',
-      exact: true
+      exact: true,
+      target: ''
     },
     {
       path: '/proyectos',
       name: 'Proyectos',
-      exact: true
+      exact: true,
+      target: ''
     },
     {
-      path: '/curriculum',
+      path: PDF,
       name: 'Curriculum',
-      exact: true
+      exact: true,
+      target: '_blank'
     }
   ]
 
     const Nav = () => (
       <div className='Navegacion'>
-        {links.map(({path, name, exact}) => (
+        {links.map(({path, name, exact, target}) => (
         
           <NavLink theme={theme} key={name} className="no-active"
             style={{ fontSize: 21, color:'#000000', textDecoration: 'none' }} 
             to={path}
             exact={exact}
+            target={target}
             activeClassName="active">
               {name}
           </NavLink>
