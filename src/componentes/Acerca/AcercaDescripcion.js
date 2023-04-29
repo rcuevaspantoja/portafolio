@@ -28,7 +28,7 @@ function AcercaDescripcion() {
               como Encargado de control en un sistema SCADA y siendo participe de proyectos de automatización de procesos en la 
               transformación digital para la empresa Orizon S.A, parte del grupo de empresas Copec.      
               Cuento con un gran interés para seguir perfeccionandome en el mundo de las tecnologías de información y seguir aprendiendo
-              de tecnología como de desarrollo web.
+              de tecnología como de desarrollo web e Inteligencia Artificial.
             </Typography>
         </div>
 
