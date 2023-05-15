@@ -24,27 +24,22 @@ function AcercaPasatiempos() {
 
     var emoji = require('node-emoji')
 
-    const [ emojiPasatiempo, setEmojiPasatiempo ] = useState('runner')
-    const [ descripcionPasatiempo, setDescripcionPasatiempo ] = useState('Descubierta a muy tardía edad, el gimnasio ha sido una gran manera para desestresarme, pasar el tiempo con amigos y para poder meditar. Sumado a los obvios beneficios que vienen de la mano con la actividad física.')
-
-    const gimnasio = () => {
-        setEmojiPasatiempo('runner');
-        setDescripcionPasatiempo('Descubierta a muy tardía edad, el gimnasio ha sido una gran manera para desestresarme, pasar el tiempo con amigos y para poder meditar. Sumado a los obvios beneficios que vienen de la mano con la actividad física.');
-    }
+    const [ emojiPasatiempo, setEmojiPasatiempo ] = useState('books')
+    const [ descripcionPasatiempo, setDescripcionPasatiempo ] = useState('Me gustar en constante aprendizaje, de cosas que me llamen la atención y otras que no tanto. Encuentro un interés en saber como funcionan las cosas.')
 
     const teclados = () => {
         setEmojiPasatiempo('computer');
-        setDescripcionPasatiempo('Ya sea para trabajar o navegar por internet los teclados pasan a ser parte fundamental del día a día de los informáticas, es por esto que disfruto mucho aprendiendo y poniendo en práctica lo que voy aprendiendo de este mundo en mi propio teclado.');      
+        setDescripcionPasatiempo('Suena obvio, pero no lo es tanto. Me gusta meterme en el hardware y software, soldar, intentar inventar cosas, etc.');      
     }
 
-    const fotografia = () => {
-        setEmojiPasatiempo('camera');
-        setDescripcionPasatiempo('El congelar un momento de la vida en una fotografía lo considero necesario y hasta obligatorio para a futuro poder recordar de mejor manera todos esos buenos momentos vividos. Y al andar en todo momento con un cámara en mi telefono me veo en la obligación de congelar ciertos momentos.')
+    const finanzas = () => {
+        setEmojiPasatiempo('coin');
+        setDescripcionPasatiempo('Lo descubrí de último, pero me gustan mucho las finanzas personales y estoy estudiando para poder invertir en el mercado accionario.')
     }
 
     const aprender = () => {
         setEmojiPasatiempo('books');
-        setDescripcionPasatiempo('Una de las actividades de las que más disfruto es el aprender constantemente de cosas que me van llamando la antención. Estos últimos meses he aprendido bastante de circuitos y a soldar para poder reparar articulos electronicos antiguos que he ido comprando rotos para luego vender sacando una ganancia.')
+        setDescripcionPasatiempo('Me gustar en constante aprendizaje, de cosas que me llamen la atención y otras que no tanto. Encuentro un interés en saber como funcionan las cosas.')
     }
 
   return (
@@ -66,10 +61,10 @@ function AcercaPasatiempos() {
             </div>        
 
             <div className='AcercaPasatiempos-botones'>
-                <Button theme={theme} className='AcercaPasatiempos-botones-hijo' variant="contained" onClick={gimnasio}>Gimnasio</Button>
-                <Button theme={theme} className='AcercaPasatiempos-botones-hijo' variant="contained" onClick={fotografia}>Fotografía</Button>
+                <Button theme={theme} className='AcercaPasatiempos-botones-hijo' variant="contained" onClick={aprender}>Aprender</Button>                
+                <Button theme={theme} className='AcercaPasatiempos-botones-hijo' variant="contained" onClick={finanzas}>Finanzas</Button>
                 <Button theme={theme} className='AcercaPasatiempos-botones-hijo' variant="contained" onClick={teclados}>Teclados</Button>
-                <Button theme={theme} className='AcercaPasatiempos-botones-hijo' variant="contained" onClick={aprender}>Aprender</Button>
+
             </div>   
 
             <div className='AcercaPasatiempos-descripcion'>
@@ -78,7 +73,6 @@ function AcercaPasatiempos() {
                 </Typography>   
             </div>  
         </Box>
-      
     </div>
   )
 }
