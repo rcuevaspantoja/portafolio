@@ -13,6 +13,14 @@ import { SiJavascript, SiReact, SiCss3 } from 'react-icons/si';
 
 export default function Proyectos() {
     
+  const apuntes = [
+    {
+      nombre:'Apuntes Personales',
+      descripcion: 'Proximamente.',
+      ruta: ''
+    }
+  ]
+
   const fuentes = [
     {
       nombre: 'Portafolio de presentación mía y proyectos',
@@ -47,38 +55,65 @@ export default function Proyectos() {
   return (
     <>
       
-      <div className='Proyectos'>
-        {fuentes.map(({nombre, ruta, imagen, descripcion, tecnologias}) => (
-          <div className='Card'>
-            <Card>
-            <CardActionArea href={ruta} target="_blank">
-              <CardMedia 
-                component="img"
-                height="140"
-                image={imagen}
-                alt={nombre}             
-              />
-              <CardContent style={{backgroundColor: "white bone"}}>
-                <Typography gutterBottom variant="h5" component="div">
-                  {nombre}
-                </Typography>
-
-                <Typography variant="body2" color="text.secondary">
-                  {descripcion}
-                </Typography>
-
-                <div className='proyectoTecnologias'>
-                  <Typography variant="h5">
-                    <hr/>
-                    {tecnologias}
+      <div>
+      <div className='TituloSegundo'><Typography variant='h3'> Desarrollo Web </Typography></div>
+        <div className='Proyectos'>
+          {fuentes.map(({nombre, ruta, imagen, descripcion, tecnologias}) => (
+            <div className='Card'>
+              <Card>
+              <CardActionArea href={ruta} target="_blank">
+                <CardMedia 
+                  component="img"
+                  height="140"
+                  image={imagen}
+                  alt={nombre}             
+                />
+                <CardContent style={{backgroundColor: "white bone"}}>
+                  <Typography gutterBottom variant="h5" component="div">
+                    {nombre}
                   </Typography>
-                </div>
 
-              </CardContent>
-            </CardActionArea>
-            </Card>
-          </div>
-        ))}
+                  <Typography variant="body2" color="text.secondary">
+                    {descripcion}
+                  </Typography>
+
+                  <div className='proyectoTecnologias'>
+                    <Typography variant="h5">
+                      <hr/>
+                      {tecnologias}
+                    </Typography>
+                  </div>
+
+                </CardContent>
+              </CardActionArea>
+              </Card>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <div>
+        <div className='TituloSegundo'><Typography variant='h3'> Apuntes </Typography></div>
+        <div className='Proyectos'>
+          {apuntes.map(({nombre, descripcion, ruta }) => (
+            <div className='Card'>
+              <Card>
+              <CardActionArea href={ruta} target="_blank">
+                <CardContent style={{backgroundColor: "white bone"}}>
+                  <Typography gutterBottom variant="h5" component="div">
+                    {nombre}
+                  </Typography>
+
+                  <Typography variant="body2" color="text.secondary">
+                    {descripcion}
+                  </Typography>
+
+                </CardContent>
+              </CardActionArea>
+              </Card>
+            </div>
+          ))}
+        </div>
       </div>
     </>
   )
