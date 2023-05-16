@@ -4,9 +4,9 @@
 Página web que contiene información en detalle de mi persona, trabajos e intereces para facilitar las contrataciones a futuros trabajos o proyectos. Este se encuentra ede momento en una etapa de desarrollo inicial, esperando a futuro hacerlo más complejo y disponible para una versión en ingles
 
 # Estado Actual ETAPA 1 DE 3
-- Etapa 1: Buscar un diseño con el que me sienta comodo
-- Etapa 2: Refactorizar codigo
-- Etapa 3: traducir
+- Etapa 1: Buscar un diseño con el que me sienta comodo y lanzar una versión 1.0
+- Etapa 2: Refactorizar codigo, arreglar version movil y misc.
+- Etapa 3: Crear una versión en ingles
 
 # Desarrollo
 El desarrollo de este programo ha sido sacarme de lo que suelo estar acostumbrado e utilizar características con las cuales no estoy acostumbrado. Una vez terminado, cuando me sienta comodo con el estado de este, realizaré una reafactorización de todo el código para que quede más limpio
