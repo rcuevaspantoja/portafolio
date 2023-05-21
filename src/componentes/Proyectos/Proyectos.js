@@ -8,6 +8,8 @@ import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
 import minPortafolio from '../../archivos/miniatura-portafolio.png'
 import { SiJavascript, SiReact, SiCss3 } from 'react-icons/si';
+import { FaBrain } from 'react-icons/fa';
+
 
 /** https://react-icons.github.io/react-icons << iconos */
 
@@ -15,13 +17,15 @@ export default function Proyectos() {
     
   const apuntes = [
     {
-      nombre:'Apuntes Personales',
-      descripcion: 'Proximamente.',
-      ruta: ''
+      nombre:'Apuntes Inteligencia Aritificial',
+      descripcion: 'Apuntes sacados personales del curso de Santiago Hernandez.',
+      ruta: '',
+      imagen: 'https://www.engineersgarage.com/wp-content/uploads/2021/11/TCH36-01-scaled.jpg',
+      tecnologias: <> <FaBrain/> </>
     }
   ]
 
-  const fuentes = [
+  const proyectos = [
     {
       nombre: 'Portafolio de presentación mía y proyectos',
       ruta: 'https://github.com/rcuevaspantoja/portafolio',
@@ -52,11 +56,10 @@ export default function Proyectos() {
     }
   ]
 
-  return (
-    <>
-      
-      <div>
-      <div className='TituloSegundo'><Typography variant='h3'> Desarrollo Web </Typography></div>
+  const tarjeta = ( titulo1, fuentes ) =>{
+    return(
+      <>
+        <div className='TituloSegundo'><Typography variant='h3'> {titulo1} </Typography></div>
         <div className='Proyectos'>
           {fuentes.map(({nombre, ruta, imagen, descripcion, tecnologias}) => (
             <div className='Card'>
@@ -66,8 +69,8 @@ export default function Proyectos() {
                   component="img"
                   height="140"
                   image={imagen}
-                  alt={nombre}             
-                />
+                  alt={nombre}/>
+
                 <CardContent style={{backgroundColor: "white bone"}}>
                   <Typography gutterBottom variant="h5" component="div">
                     {nombre}
@@ -90,31 +93,15 @@ export default function Proyectos() {
             </div>
           ))}
         </div>
-      </div>
+        </>
+    )
+  }
 
-      <div>
-        <div className='TituloSegundo'><Typography variant='h3'> Apuntes </Typography></div>
-        <div className='Proyectos'>
-          {apuntes.map(({nombre, descripcion, ruta }) => (
-            <div className='Card'>
-              <Card>
-              <CardActionArea href={ruta} target="_blank">
-                <CardContent style={{backgroundColor: "white bone"}}>
-                  <Typography gutterBottom variant="h5" component="div">
-                    {nombre}
-                  </Typography>
+  return (
+    <>
+      {tarjeta( "Desarrollo Web", proyectos )}  
 
-                  <Typography variant="body2" color="text.secondary">
-                    {descripcion}
-                  </Typography>
-
-                </CardContent>
-              </CardActionArea>
-              </Card>
-            </div>
-          ))}
-        </div>
-      </div>
+      {tarjeta( "Apuntes Personales", apuntes )}
     </>
   )
 }
