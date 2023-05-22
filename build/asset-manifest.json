@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/static/css/main.0659928d.css",
+    "main.js": "/static/js/main.fa65b154.js",
+    "static/media/profile-pic.jpg": "/static/media/profile-pic.08d64a8dd60d3b0b8f6a.jpg",
+    "static/media/miniatura-portafolio.png": "/static/media/miniatura-portafolio.ff879e8216c9bba17ba7.png",
+    "static/media/Curriculum_2023.pdf": "/static/media/Curriculum_2023.18b96e32f201ca1bc83a.pdf",
+    "static/media/Memoji.png": "/static/media/Memoji.34958bdfe9c6cd3861e2.png",
+    "index.html": "/index.html",
+    "main.0659928d.css.map": "/static/css/main.0659928d.css.map",
+    "main.fa65b154.js.map": "/static/js/main.fa65b154.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0659928d.css",
+    "static/js/main.fa65b154.js"
+  ]
+}

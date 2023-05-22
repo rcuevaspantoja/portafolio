@@ -9,7 +9,7 @@ import { CardActionArea } from '@mui/material';
 import minPortafolio from '../../archivos/miniatura-portafolio.png'
 import { SiJavascript, SiReact, SiCss3 } from 'react-icons/si';
 import { FaBrain } from 'react-icons/fa';
-
+import PDF from '../../archivos/Machine_Learning.pdf'
 
 /** https://react-icons.github.io/react-icons << iconos */
 
@@ -17,10 +17,10 @@ export default function Proyectos() {
     
   const apuntes = [
     {
-      nombre:'Apuntes Inteligencia Aritificial',
-      descripcion: 'Apuntes sacados personales del curso de Santiago Hernandez.',
-      ruta: '',
-      imagen: 'https://www.engineersgarage.com/wp-content/uploads/2021/11/TCH36-01-scaled.jpg',
+      nombre:'Apuntes Machine Learning',
+      descripcion: 'Apuntes sacados personales del curso de Santiago Hernandez. (no terminado)',
+      ruta: PDF,
+      imagen: 'https://www.iberdrola.com/documents/20125/40921/machine_learning_746x419.jpg/15ff7571-4cfc-d9f0-5ef4-9c2e9306ad88?t=1627968463400',
       tecnologias: <> <FaBrain/> </>
     }
   ]
