@@ -47,11 +47,15 @@ export default function Proyectos() {
       descripcion: 'Sitio web en React para la biografia de la psicologa online Valentina Moyano',
       tecnologias: <> <SiReact/> <SiJavascript/> <SiCss3/> </> 
     },
+
+  ]
+
+  const otros = [
     {
       nombre: 'Problemas de programación para entrevistas',
       ruta: 'https://github.com/rcuevaspantoja/problemas-entrevistas',
       imagen: 'http://s3.amazonaws.com/cb-talent-development-cortex-prod/media/attachments/000/001/682/original/shutterstock_248597491_IntTest.jpg?1452861845',
-      descripcion: 'Repositorio de preguntas de nivel medio para empresas tipo FAANG traducidas por mi',
+      descripcion: 'Repositorio de preguntas de nivel medio',
       tecnologias: <> <SiJavascript/> </>
     }
   ]
@@ -100,7 +104,7 @@ export default function Proyectos() {
   return (
     <>
       {tarjeta( "Desarrollo Web", proyectos )}  
-
+      {tarjeta( "Otros", otros)}
       {tarjeta( "Apuntes Personales", apuntes )}
     </>
   )
