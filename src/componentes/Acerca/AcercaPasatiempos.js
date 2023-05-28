@@ -34,7 +34,7 @@ function AcercaPasatiempos() {
 
     const finanzas = () => {
         setEmojiPasatiempo('coin');
-        setDescripcionPasatiempo('Lo descubrí de último, pero me gustan mucho las finanzas personales y estoy estudiando para poder invertir en el mercado accionario.')
+        setDescripcionPasatiempo('Lo descubrí de último, pero me gustan mucho las finanzas personales y estoy dando mis primeros pasos en el mercado accionario.')
     }
 
     const aprender = () => {

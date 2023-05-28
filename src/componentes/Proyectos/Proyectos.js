@@ -9,21 +9,12 @@ import { CardActionArea } from '@mui/material';
 import minPortafolio from '../../archivos/miniatura-portafolio.png'
 import { SiJavascript, SiReact, SiCss3 } from 'react-icons/si';
 import { FaBrain } from 'react-icons/fa';
+import { TbApi } from 'react-icons/tb';
 import PDF from '../../archivos/Machine_Learning.pdf'
 
 /** https://react-icons.github.io/react-icons << iconos */
 
 export default function Proyectos() {
-    
-  const apuntes = [
-    {
-      nombre:'Apuntes Machine Learning',
-      descripcion: 'Apuntes sacados personales del curso de Santiago Hernandez. (no terminado)',
-      ruta: PDF,
-      imagen: 'https://www.iberdrola.com/documents/20125/40921/machine_learning_746x419.jpg/15ff7571-4cfc-d9f0-5ef4-9c2e9306ad88?t=1627968463400',
-      tecnologias: <> <FaBrain/> </>
-    }
-  ]
 
   const proyectos = [
     {
@@ -47,7 +38,14 @@ export default function Proyectos() {
       descripcion: 'Sitio web en React para la biografia de la psicologa online Valentina Moyano',
       tecnologias: <> <SiReact/> <SiJavascript/> <SiCss3/> </> 
     },
+    {
+      nombre: 'Pokedex online',
+      ruta: 'https://github.com/rcuevaspantoja/pokedex',
+      imagen: 'https://raw.githubusercontent.com/rcuevaspantoja/pokedex/master/public/preview-img/Screenshot%20at%20May%2028%2008-53-27.png?token=GHSAT0AAAAAACCAMBVHDG7ZWBWCLG5P5P2YZDTLWRQ',
+      descripcion: 'Sitio web en React con consumo de la API de Pokémon',
+      tecnologias: <> <SiReact/> <SiJavascript/> <SiCss3/> <TbApi/> </>
 
+    }
   ]
 
   const otros = [
@@ -57,6 +55,13 @@ export default function Proyectos() {
       imagen: 'http://s3.amazonaws.com/cb-talent-development-cortex-prod/media/attachments/000/001/682/original/shutterstock_248597491_IntTest.jpg?1452861845',
       descripcion: 'Repositorio de preguntas de nivel medio',
       tecnologias: <> <SiJavascript/> </>
+    },
+    {
+      nombre:'Apuntes Machine Learning',
+      descripcion: 'Apuntes sacados personales del curso de Santiago Hernandez. (no terminado)',
+      ruta: PDF,
+      imagen: 'https://www.iberdrola.com/documents/20125/40921/machine_learning_746x419.jpg/15ff7571-4cfc-d9f0-5ef4-9c2e9306ad88?t=1627968463400',
+      tecnologias: <> <FaBrain/> </>
     }
   ]
 
@@ -80,7 +85,7 @@ export default function Proyectos() {
                     {nombre}
                   </Typography>
 
-                  <Typography variant="body2" color="text.secondary">
+                  <Typography className='CardDescripcion' variant="body2" color="text.secondary">
                     {descripcion}
                   </Typography>
 
@@ -103,9 +108,8 @@ export default function Proyectos() {
 
   return (
     <>
-      {tarjeta( "Desarrollo Web", proyectos )}  
+      {tarjeta( "React y Javascript", proyectos )}  
       {tarjeta( "Otros", otros)}
-      {tarjeta( "Apuntes Personales", apuntes )}
     </>
   )
 }
