@@ -41,7 +41,7 @@ export default function Proyectos() {
     {
       nombre: 'Pokedex online',
       ruta: 'https://github.com/rcuevaspantoja/pokedex',
-      imagen: 'https://raw.githubusercontent.com/rcuevaspantoja/pokedex/master/public/preview-img/Screenshot%20at%20May%2028%2008-53-27.png?token=GHSAT0AAAAAACCAMBVHDG7ZWBWCLG5P5P2YZDTLWRQ',
+      imagen: 'https://images.wikidexcdn.net/mwuploads/wikidex/c/cc/latest/20230405112114/EP1236_Pikachu_de_Ash.png',
       descripcion: 'Sitio web en React con consumo de la API de Pokémon',
       tecnologias: <> <SiReact/> <SiJavascript/> <SiCss3/> <TbApi/> </>
 
