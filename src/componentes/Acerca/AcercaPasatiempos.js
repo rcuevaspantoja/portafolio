@@ -29,23 +29,25 @@ function AcercaPasatiempos() {
 
     const teclados = () => {
         setEmojiPasatiempo('computer');
-        setDescripcionPasatiempo('Suena obvio, pero no lo es tanto. Me gusta meterme en el hardware y software, soldar, intentar inventar cosas, etc.');      
+        setDescripcionPasatiempo(`
+            Suena obvio, pero no lo es tanto. Me gusta meterme en el hardware y software, soldar, intentar inventar cosas, etc.`);      
     }
 
     const finanzas = () => {
         setEmojiPasatiempo('coin');
-        setDescripcionPasatiempo('Lo descubrí de último, pero me gustan mucho las finanzas personales y estoy dando mis primeros pasos en el mercado accionario.')
+        setDescripcionPasatiempo(`
+            Lo descubrí de último, pero me gustan mucho las finanzas personales y estoy dando mis primeros pasos en el mercado accionario.`)
     }
 
     const aprender = () => {
         setEmojiPasatiempo('books');
-        setDescripcionPasatiempo('Me gustar en constante aprendizaje, de cosas que me llamen la atención y otras que no tanto. Encuentro un interés en saber como funcionan las cosas.')
+        setDescripcionPasatiempo(`Me gustar en constante aprendizaje, de cosas que me llamen la atención y otras que no tanto. 
+        Encuentro un interés en saber como funcionan las cosas.`)
     }
 
   return (
     <div className='AcercaPasatiempos'>
 
-   
         <Box className='AcercaPasatiempos-box'
             sx={{
                 width: '100%',
@@ -53,7 +55,6 @@ function AcercaPasatiempos() {
                 borderTop: 2,
                 borderBottom: 2,
                 borderColor: "#050505"
-                /* backgroundColor: '#FFFFFF', */
             }}>
 
             <div className='AcercaPasatiempos-pasatiempos'>
@@ -64,7 +65,6 @@ function AcercaPasatiempos() {
                 <Button theme={theme} className='AcercaPasatiempos-botones-hijo' variant="contained" onClick={aprender}>Aprender</Button>                
                 <Button theme={theme} className='AcercaPasatiempos-botones-hijo' variant="contained" onClick={finanzas}>Finanzas</Button>
                 <Button theme={theme} className='AcercaPasatiempos-botones-hijo' variant="contained" onClick={teclados}>Teclados</Button>
-
             </div>   
 
             <div className='AcercaPasatiempos-descripcion'>

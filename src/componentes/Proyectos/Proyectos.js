@@ -6,11 +6,11 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
-import minPortafolio from '../../archivos/miniatura-portafolio.png'
+import minPortafolio from '../../archivos/img/miniatura-portafolio.png'
 import { SiJavascript, SiReact, SiCss3 } from 'react-icons/si';
 import { FaBrain } from 'react-icons/fa';
 import { TbApi } from 'react-icons/tb';
-import PDF from '../../archivos/Machine_Learning.pdf'
+import PDF from '../../archivos/pdf/Machine_Learning.pdf'
 
 /** https://react-icons.github.io/react-icons << iconos */
 

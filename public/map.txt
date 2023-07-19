@@ -1,0 +1,6 @@
+Mapa de Componentes
+
+Acerca
+	\_ AcercaFoto
+	\_AcercaDescripción
+		\_AcercaPasatiempos
