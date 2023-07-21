@@ -21,7 +21,6 @@ function AcercaPasatiempos() {
 }
     );
     
-    // eslint-disable-next-line
     const intereses = [{
         keyword: 'aprender',
         icono: 'books',
@@ -37,15 +36,7 @@ function AcercaPasatiempos() {
     }]
 
 //funciones
-    // eslint-disable-next-line
-    const [ emojiPasatiempo, setEmojiPasatiempo ] = useState()
-    // eslint-disable-next-line
-    const [ descripcionPasatiempo, setDescripcionPasatiempo ] = useState()
-    // eslint-disable-next-line
-    const AccionBoton = (a) => {
-        // setEmojiPasatiempo(a[0])
-        // setDescripcionPasatiempo(a[1])
-    }
+    const [ descripcionPasatiempo, setDescripcionPasatiempo ] = useState(intereses[0].descripcion)
 
   return (
     <div className='AcercaPasatiempos'>
@@ -64,9 +55,9 @@ function AcercaPasatiempos() {
             </div>        
 
             <div className='AcercaPasatiempos-botones'>
-                <Button theme={theme} className='AcercaPasatiempos-botones-hijo' variant="contained" onClick={console.log()}>Aprender</Button>                
-                <Button theme={theme} className='AcercaPasatiempos-botones-hijo' variant="contained" onClick={console.log()}>Finanzas</Button>
-                {intereses.forEach( (e) => <Button theme={theme} className='AcercaPasatiempos-botones-hijo' variant="contained" onClick={console.log()}>aaa </Button> )}
+                {intereses.map((e) =>              
+                    <Button theme={theme} className='AcercaPasatiempos-botones-hijo' variant="contained" onClick={() => setDescripcionPasatiempo(e.descripcion)}> {e.keyword} </Button>             
+                )}
             </div>   
 
             <div className='AcercaPasatiempos-descripcion'>
