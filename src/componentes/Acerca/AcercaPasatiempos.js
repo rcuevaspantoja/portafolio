@@ -19,30 +19,32 @@ function AcercaPasatiempos() {
             } ,
         }, 
 }
-    
     );
+    
+    // eslint-disable-next-line
+    const intereses = [{
+        keyword: 'aprender',
+        icono: 'books',
+        descripcion: `Siempre me ha gustado estar en constante aprendizaje, encuentro un ionterés en el saber y es de las cosas que se me da bien.`,
+    }, {
+        keyword: 'finanzas',
+        icono: 'coin',
+        descripcion: `Las finanzas personales y la rentavariable son mis más rescientes pasatiempos. Me gusta la idea de crear una independencia financiera.`,
+    }, {
+        keyword: 'ergonomia',
+        icono: '⌨️',
+        descripcion: `Alto interes en la ergonomía de escritorio y el buscar la mejor forma de realizar la actividad, ya sea para hacer ejercicio o para pasar horas frente al computador`
+    }]
 
-    var emoji = require('node-emoji')
-
-    const [ emojiPasatiempo, setEmojiPasatiempo ] = useState('books')
-    const [ descripcionPasatiempo, setDescripcionPasatiempo ] = useState('Me gustar en constante aprendizaje, de cosas que me llamen la atención y otras que no tanto. Encuentro un interés en saber como funcionan las cosas.')
-
-    const teclados = () => {
-        setEmojiPasatiempo('computer');
-        setDescripcionPasatiempo(`
-            Suena obvio, pero no lo es tanto. Me gusta meterme en el hardware y software, soldar, intentar inventar cosas, etc.`);      
-    }
-
-    const finanzas = () => {
-        setEmojiPasatiempo('coin');
-        setDescripcionPasatiempo(`
-            Lo descubrí de último, pero me gustan mucho las finanzas personales y estoy dando mis primeros pasos en el mercado accionario.`)
-    }
-
-    const aprender = () => {
-        setEmojiPasatiempo('books');
-        setDescripcionPasatiempo(`Me gustar en constante aprendizaje, de cosas que me llamen la atención y otras que no tanto. 
-        Encuentro un interés en saber como funcionan las cosas.`)
+//funciones
+    // eslint-disable-next-line
+    const [ emojiPasatiempo, setEmojiPasatiempo ] = useState()
+    // eslint-disable-next-line
+    const [ descripcionPasatiempo, setDescripcionPasatiempo ] = useState()
+    // eslint-disable-next-line
+    const AccionBoton = (a) => {
+        // setEmojiPasatiempo(a[0])
+        // setDescripcionPasatiempo(a[1])
     }
 
   return (
@@ -58,13 +60,13 @@ function AcercaPasatiempos() {
             }}>
 
             <div className='AcercaPasatiempos-pasatiempos'>
-                <Typography theme={theme} variant='h4'>Pasatiempos{emoji.get(emojiPasatiempo)} </Typography>
+                <Typography theme={theme} variant='h4'>Pasatiempos </Typography>
             </div>        
 
             <div className='AcercaPasatiempos-botones'>
-                <Button theme={theme} className='AcercaPasatiempos-botones-hijo' variant="contained" onClick={aprender}>Aprender</Button>                
-                <Button theme={theme} className='AcercaPasatiempos-botones-hijo' variant="contained" onClick={finanzas}>Finanzas</Button>
-                <Button theme={theme} className='AcercaPasatiempos-botones-hijo' variant="contained" onClick={teclados}>Teclados</Button>
+                <Button theme={theme} className='AcercaPasatiempos-botones-hijo' variant="contained" onClick={console.log()}>Aprender</Button>                
+                <Button theme={theme} className='AcercaPasatiempos-botones-hijo' variant="contained" onClick={console.log()}>Finanzas</Button>
+                {intereses.forEach( (e) => <Button theme={theme} className='AcercaPasatiempos-botones-hijo' variant="contained" onClick={console.log()}>aaa </Button> )}
             </div>   
 
             <div className='AcercaPasatiempos-descripcion'>
