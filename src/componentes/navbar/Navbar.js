@@ -5,10 +5,8 @@ import Navbarnormal from './Navbar-normal';
 
 export const Navbar = () => {
 
-
   return (
         <div>
-        
           <Navbarnormal/>
           <Navbarmobil/>
         </div>

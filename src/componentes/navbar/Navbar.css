@@ -92,23 +92,25 @@
   .Contenedor-Navbar-mobil{
     display: flex;
     align-items: center;
-    flex-direction: column;
-    padding-left: 1% ;
+    flex-direction: row;
     margin-top: 29px;
   }
 
   .Menu-Burger{
     display:flex;
     flex-direction: column;
-    width: 100%;
-   /*  background-color: green; */
+  }
+
+  .Menu-abierto{
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-end;
   }
 
   .Hamburgueza{
     display: flex;
-    align-items: center;
+    align-self: flex-end;
     justify-content: center;
-    left: 5%;
   }
 
   .Navbar-1-mobil{
@@ -118,17 +120,25 @@
     align-items: center;
   }
 
+  /* div contendedor de lo que abre la Hamburgueza */
   .Navbar-2-mobil{
-    display: flex;
-    align-items: center;
+    display:flex;
+    flex-direction: column;
     justify-content: center;
-    padding-top: 11px;
+    align-items: center;
   }
 
+  /* titulo */
   .Navbar-3-mobil{
     display:flex;
-    align-items: center;
     justify-content: center;
+    margin: 0 auto;
+    width: 100%;
+    padding-left: 50px;
   }
 
+  .Redes{
+    display: flex;
+    flex-direction: row;
+  }
 }

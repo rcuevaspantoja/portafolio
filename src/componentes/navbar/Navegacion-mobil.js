@@ -1,7 +1,7 @@
 import React from 'react'
 import { createTheme } from '@material-ui/core/styles';
 import { Link } from "react-router-dom";
-import PDF from '../../archivos/Curriculum_2023.pdf'
+import PDF from '../../archivos/pdf/Curriculum_2023.pdf'
 
 export const NavegacionMobil = (props) =>{
 

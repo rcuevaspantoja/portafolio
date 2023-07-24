@@ -6,11 +6,11 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
-import minPortafolio from '../../archivos/miniatura-portafolio.png'
+import minPortafolio from '../../archivos/img/miniatura-portafolio.png'
 import { SiJavascript, SiReact, SiCss3 } from 'react-icons/si';
 import { FaBrain } from 'react-icons/fa';
 import { TbApi } from 'react-icons/tb';
-import PDF from '../../archivos/Machine_Learning.pdf'
+import PDF from '../../archivos/pdf/Machine_Learning.pdf'
 
 /** https://react-icons.github.io/react-icons << iconos */
 
@@ -41,8 +41,8 @@ export default function Proyectos() {
     {
       nombre: 'Pokedex online',
       ruta: 'https://github.com/rcuevaspantoja/pokedex',
-      imagen: 'https://images.wikidexcdn.net/mwuploads/wikidex/c/cc/latest/20230405112114/EP1236_Pikachu_de_Ash.png',
-      descripcion: 'Sitio web en React con consumo de la API de Pokémon',
+      imagen: 'https://www.kjcesports.com/wp-content/uploads/2023/05/POkedex.jpg',
+      descripcion: 'Sitio web en React con consumo de la API de Pokémon para buscar Pokémon, su número de ID y su tipo',
       tecnologias: <> <SiReact/> <SiJavascript/> <SiCss3/> <TbApi/> </>
 
     }
@@ -73,31 +73,32 @@ export default function Proyectos() {
           {fuentes.map(({nombre, ruta, imagen, descripcion, tecnologias}) => (
             <div className='Card'>
               <Card>
-              <CardActionArea href={ruta} target="_blank">
-                <CardMedia 
-                  component="img"
-                  height="140"
-                  image={imagen}
-                  alt={nombre}/>
+                <CardActionArea href={ruta} target="_blank">
+                  <CardMedia 
+                    component="img"
+                    height="140"
+                    minwidth="75vw"
+                    image={imagen}
+                    alt={nombre}/>
 
-                <CardContent style={{backgroundColor: "white bone"}}>
-                  <Typography gutterBottom variant="h5" component="div">
-                    {nombre}
-                  </Typography>
-
-                  <Typography className='CardDescripcion' variant="body2" color="text.secondary">
-                    {descripcion}
-                  </Typography>
-
-                  <div className='proyectoTecnologias'>
-                    <Typography variant="h5">
-                      <hr/>
-                      {tecnologias}
+                  <CardContent style={{backgroundColor: "white bone"}}>
+                    <Typography gutterBottom variant="h5" component="div">
+                      {nombre}
                     </Typography>
-                  </div>
 
-                </CardContent>
-              </CardActionArea>
+                    <Typography className='CardDescripcion' variant="body2" color="text.secondary">
+                      {descripcion}
+                    </Typography>
+
+                    <div className='proyectoTecnologias'>
+                      <Typography variant="h5">
+                        <hr/>
+                        {tecnologias}
+                      </Typography>
+                    </div>
+
+                  </CardContent>
+                </CardActionArea>
               </Card>
             </div>
           ))}

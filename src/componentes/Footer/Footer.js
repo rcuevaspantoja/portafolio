@@ -2,7 +2,7 @@ import React from 'react'
 import './Footer.css';
 import Typography from '@mui/material/Typography';
 import { createTheme } from '@material-ui/core/styles';
-import Memoji from '../../archivos/Memoji.png'
+import Memoji from '../../archivos/img/Memoji.png'
 
 
 function Footer() {

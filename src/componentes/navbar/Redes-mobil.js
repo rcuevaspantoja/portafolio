@@ -32,7 +32,7 @@ export const RedesMobil = (props) => {
 
 
     return (
-      <>
+      <div className='Redes'>
         <div className='Instagram-mobil' onMouseEnter={onHoverInstagram} onMouseLeave={onLeaveInstagram}>
             
             <IconButton size="large" href='https://www.instagram.com/rcuevaspantoja/' target="_blank">
@@ -53,7 +53,7 @@ export const RedesMobil = (props) => {
                 <div className='LinkedIn'><LinkedInIcon style={{ fontSize: 40 }} fontSize="inherit" /></div>
             </IconButton>
         </div>
-      </>
+      </div>
     )
 }
 
