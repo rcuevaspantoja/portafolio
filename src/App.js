@@ -25,22 +25,20 @@ function App() {
 
   return (      
     
-  <div>
-    <Navbar/>
-    <animated.div style={springCurriculum2} className="App">
-      <Routes>
-        {/*Se desplaza desde el path / al Acerca donde se encuentra la página */}
-        <Route path='/' element={ <Navigate to="/Acerca" /> }/>
-        <Route path={"/Acerca"} element={<><Acerca /><Experiencias /><Curriculum /></>} />
-        <Route path={"/proyectos"} element={<ProyectosPersonales/>} />
-      </Routes>
-    </animated.div>
-
-    <footer>
-      <FooterComponente/>
-    </footer>
- 
-  </div>
+    <div>
+      <animated.div style={springCurriculum2} className="App">
+        <Navbar/>  
+        <Routes>
+          {/*Se desplaza desde el path / al Acerca donde se encuentra la página */}
+          <Route path='/' element={ <Navigate to="/Acerca" /> }/>
+          <Route path={"/Acerca"} element={<><Acerca /><Experiencias /><Curriculum /></>} />
+          <Route path={"/proyectos"} element={<ProyectosPersonales/>} />
+        </Routes>
+      </animated.div>
+      <footer>
+        <FooterComponente/>
+      </footer>
+    </div>
   );
 }
 export default App;
