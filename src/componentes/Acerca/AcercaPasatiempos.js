@@ -24,7 +24,7 @@ function AcercaPasatiempos() {
     const intereses = [{
         keyword: 'aprender',
         icono: 'books',
-        descripcion: `Siempre me ha gustado estar en constante aprendizaje, encuentro un ionterés en el saber y es de las cosas que se me da bien.`,
+        descripcion: `Siempre me ha gustado estar en constante aprendizaje, encuentro un interés en el saber y es de las cosas que se me da bien.`,
     }, {
         keyword: 'finanzas',
         icono: 'coin',
