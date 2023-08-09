@@ -50,7 +50,7 @@ export const Redes = () => {
         
         </div>
         <div className='Instagram' onMouseEnter={onHoverInstagram} onMouseLeave={onLeaveInstagram}>       
-            <IconButton size="large" href='https://www.instagram.com/rcuevaspantoja/' target="_blank">
+            <IconButton size="large" href='https://www.instagram.com/rudd.dev/' target="_blank">
             <div className='Instagram'><InstagramIcon style={{ fontSize: 40 }} fontSize="inherit" /></div>
             </IconButton>
         </div>
@@ -62,7 +62,7 @@ export const Redes = () => {
         </div>
 
         <div className='LinkedIn' onMouseEnter={onHoverLinkedIn} onMouseLeave={onLeaveLinkedIn}>        
-            <IconButton size="large" href='https://www.linkedin.com/in/rodolfo-cuevas-7407231b5/' target="_blank"> 
+            <IconButton size="large" href='https://www.linkedin.com/in/rodolfo-cuevas-pantoja-7407231b5' target="_blank"> 
                 <div className='LinkedIn'><LinkedInIcon style={{ fontSize: 40 }} fontSize="inherit" /></div>
             </IconButton>
         </div>
