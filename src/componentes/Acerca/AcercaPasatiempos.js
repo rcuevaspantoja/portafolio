@@ -28,11 +28,11 @@ function AcercaPasatiempos() {
     }, {
         keyword: 'finanzas',
         icono: 'coin',
-        descripcion: `Las finanzas personales y la rentavariable son mis más rescientes pasatiempos. Me gusta la idea de crear una independencia financiera.`,
+        descripcion: `Las finanzas personales, la renta variable y el mercado accionario son mis más recientes pasatiempos. Me gusta el concepto de crear una independencia financiera y poder dedicarse a hacer lo que a uno más le gusta sin necesidad de preocuparse por el dinero.`,
     }, {
         keyword: 'ergonomia',
         icono: '⌨️',
-        descripcion: `Alto interes en la ergonomía de escritorio y el buscar la mejor forma de realizar la actividad, ya sea para hacer ejercicio o para pasar horas frente al computador`
+        descripcion: `Interés en la ergonomía de escritorio, el buscar la mejor forma de realizar la actividad de programar por largas horas y dueño de más de 3 teclados algunos fabricados a mano y otros comprados.`
     }]
 
 //funciones
