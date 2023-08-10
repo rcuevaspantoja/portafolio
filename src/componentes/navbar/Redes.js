@@ -5,7 +5,7 @@ import TwitterIcon from '@mui/icons-material/Twitter';
 import IconButton from '@mui/material/IconButton';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
-
+import { Icon } from '@iconify/react';
 
 export const Redes = () => {
 
@@ -17,6 +17,7 @@ export const Redes = () => {
           ].join(','),
         },});
 
+    const [hoverTwitch, setHoverTwitch] = useState(false);
     const [hoverInstagram, setHoverInstagram] = useState(false);
     const [hoverTwitter, setHoverTwitter] = useState(false);
     const [hoverLinkedIn, setHoverLinkedIn] = useState(false);
@@ -39,16 +40,30 @@ export const Redes = () => {
     const onLeaveLinkedIn = () => {
         setHoverLinkedIn(false);
     };
-
+    const onHoverTwitch = () => {
+        setHoverTwitch(true);
+    }
+    const onLeaveTwitch = () => {
+        setHoverTwitch(false);
+    }
 
     return (
       <>
         <div>
-        {hoverInstagram ? <Typography theme={theme} style={{ fontSize: 20, color:'#707070'}}> rcuevaspantoja </Typography> : "" }
+        {hoverTwitch? <Typography theme={theme} style={{ fontSize: 20, color:'#707070'}}> rudddeveloper </Typography> : "" }
+        {hoverInstagram ? <Typography theme={theme} style={{ fontSize: 20, color:'#707070'}}> rudd.dev </Typography> : "" }
         {hoverTwitter ? <Typography theme={theme} style={{ fontSize: 20, color:'#707070'}}> @rcuevaspantoja </Typography> : "" }
         {hoverLinkedIn ? <Typography theme={theme} style={{ fontSize: 20, color:'#707070'}}> Rodolfo </Typography> : "" }
         
+
         </div>
+
+        <div className='Twitch' onMouseEnter={onHoverTwitch} onMouseLeave={onLeaveTwitch}>
+            <IconButton size='large' href='https://www.twitch.tv/rudddeveloper' target='_blank'>
+                <Icon icon="mdi:twitch" width={40} />    
+            </IconButton>
+        </div>
+
         <div className='Instagram' onMouseEnter={onHoverInstagram} onMouseLeave={onLeaveInstagram}>       
             <IconButton size="large" href='https://www.instagram.com/rudd.dev/' target="_blank">
             <div className='Instagram'><InstagramIcon style={{ fontSize: 40 }} fontSize="inherit" /></div>
@@ -69,5 +84,4 @@ export const Redes = () => {
       </>
     )
 }
-
 export default Redes
