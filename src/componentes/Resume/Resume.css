@@ -5,21 +5,21 @@
   justify-content: center;
   width: 100%;
   padding: 5px;
-  margin-top: 20px;
 }
 
-.contenedor-bandera{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 25px;
-    width: 40%;
+.contenedor-bandera {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 25px;
+  width: 40%;
 }
 
-.resume-box-Chile, .resume-box-US {
+.resume-box-Chile,
+.resume-box-US {
   margin-top: 20px;
   width: 70%;
-  height: 600px;
+  height: 500px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -30,10 +30,10 @@
   filter: grayscale(3);
 }
 
-.resume-box-Chile:hover, .resume-box-US:hover {
+.resume-box-Chile:hover,
+.resume-box-US:hover {
   filter: grayscale(0);
 }
-
 
 .resume-box-Chile {
   background-image: url(../../archivos/img/flag-chile.jpg);
@@ -51,17 +51,50 @@
 
 .resume h1 {
   font-family: "Bebas Neue", sans-serif;
-  font-size: 150px;
+  font-size: 100px;
   color: white;
   text-shadow: 0 0 20px black;
 }
 
-.resume a{
+.resume a {
   text-decoration: none;
 }
 
-.resume img{
-    height: 120px;
-    width: 70px;
-    rotate: 180deg;
+.resume img {
+  height: 60px;
+  width: 45px;
+  rotate: 180deg;
+}
+
+@media (max-width: 1150px) {
+  .contenedor-bandera {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 25px;
+    width: 70%;
+  }
+
+  .contenedor-bandera img {
+    display: none;
+  }
+
+  .resume h1 {
+    display: none;
+  }
+
+  .resume-box-Chile,
+  .resume-box-US {
+    margin-top: 20px;
+    width: 50vw;
+    height: 34vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 15px;
+    box-shadow: 5px 5px 15px black;
+    border-radius: 15px;
+    filter: grayscale(3);
+  }
 }
