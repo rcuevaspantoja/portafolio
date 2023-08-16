@@ -3,7 +3,6 @@ import Typography from '@mui/material/Typography';
 import Redes from './Redes'
 import { createTheme } from '@material-ui/core/styles';
 import { NavLink } from "react-router-dom";
-import PDF from '../../archivos/pdf/Curriculum_2023.pdf'
 
 export const Navbar = () => {
 
@@ -29,10 +28,10 @@ export const Navbar = () => {
       target: ''
     },
     {
-      path: PDF,
+      path: '/Resume',
       name: 'Curriculum',
       exact: true,
-      target: '_blank'
+      target: ''  // '_blank' => nueva ventana
     }
   ]
 

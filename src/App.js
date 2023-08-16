@@ -11,7 +11,7 @@ import Acerca from './componentes/Acerca/Acerca'
 import Curriculum from './componentes/Curriculum/Curriculum'
 import Experiencias from './componentes/Experiencia/Experiencias'
 import ProyectosPersonales from './componentes/Proyectos/Proyectos'
-
+import Resume from './componentes/Resume/Resume';
 import {useSpring, animated } from 'react-spring'
 
 function App() {
@@ -32,7 +32,8 @@ function App() {
           {/*Se desplaza desde el path / al Acerca donde se encuentra la página */}
           <Route path='/' element={ <Navigate to="/Acerca" /> }/>
           <Route path={"/Acerca"} element={<><Acerca /><Experiencias /><Curriculum /></>} />
-          <Route path={"/proyectos"} element={<ProyectosPersonales/>} />
+          <Route path={"/Proyectos"} element={<ProyectosPersonales/>} />
+          <Route path={"/resume"} element ={<Resume/>}/>
         </Routes>
       </animated.div>
       <footer>
