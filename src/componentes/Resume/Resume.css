@@ -4,7 +4,6 @@
   flex-wrap: wrap;
   justify-content: center;
   width: 100%;
-  padding: 5px;
 }
 
 .contenedor-bandera {
@@ -80,7 +79,8 @@
   }
 
   .resume h1 {
-    display: none;
+    display: show;
+    font-size: 50px;
   }
 
   .resume-box-Chile,

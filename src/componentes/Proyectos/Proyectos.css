@@ -1,10 +1,5 @@
-.Proyectos{
-    display: grid;
-    grid-template-columns: repeat( 4 , 25% );
-    grid-template-rows: auto;
-    justify-items: center;
-    margin-left: 5%;
-    margin-right: 5%;
+.body-proyecto{
+    margin-bottom: 50px;
 }
 
 .Titulo{
@@ -19,7 +14,7 @@
     margin-top: 4%;
 }
 
-.Card{
+#Card{
     display:flex;
     margin: 20px;
     width: 350px;
@@ -30,7 +25,7 @@
     display: flex;
 }
 
-.Card:hover {   
+#Card:hover {   
     box-shadow: 5px 5px 5px 2px rgb(193, 193, 193);
 }
 

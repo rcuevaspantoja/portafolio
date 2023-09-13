@@ -16,7 +16,7 @@ function Footer() {
   },});
 
   return (
-    <div className='Footer'>
+    <footer className='Footer'>
       <div className='Footer-contenedor'>
 
         <img src={Memoji} alt="Memoji" align="center" className="Memoji"/>
@@ -24,7 +24,7 @@ function Footer() {
         Esta página está en constante cambio, me gusta ir probando cosas nuevas y reflejarlas acá.
         </Typography>
       </div>
-    </div>
+    </footer>
   )
 }
 

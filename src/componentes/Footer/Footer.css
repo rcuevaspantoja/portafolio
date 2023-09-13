@@ -4,6 +4,7 @@
     height: 225px;
     align-self: flex-end;
     justify-content: center;
+    box-shadow: 0 -10px 10px gray
 }
 
 .Footer-contenedor{

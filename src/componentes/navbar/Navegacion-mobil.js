@@ -30,6 +30,13 @@ export const NavegacionMobil = (props) =>{
             Proyectos
         </Link>
 
+        <Link theme={theme} 
+          style={{ fontSize: 25, color:'#000000', textDecoration: 'none'}} 
+          to="/Resume" 
+          onClick={ () => props.isMobile && props.cerrarMenuMobil() }>
+            Curriculum
+        </Link>
+
       </>
     )
   

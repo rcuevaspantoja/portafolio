@@ -18,14 +18,13 @@ export const Navbar = () => {
     },});
 
   //animacion
+  // eslint-disable-next-line
   const [animacion, setAnimacion] = useState( false )
-  //const [animacion2, setAnimacion2] = useState( false )
-
 
   const springNavBar = useSpring({
-    from:{ opacity: 0 },
-    to: { opacity: 1 },
-    config: {duration: 700} ,
+    from:{ opacity: 0, top: 1200},
+    to: { opacity: 1, top: 0},
+    config: {duration: 1200} ,
     reverse: !animacion
   })  
 

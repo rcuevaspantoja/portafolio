@@ -25,7 +25,7 @@ function Recomendacion() {
   return (
     <animated.div style={springCurriculum2} className='Recomendacion'>
 
-            <div className='Recomendacion-parte1'>
+            <div>
                 <Typography theme={theme} align="center" style={{ fontSize: 20, color:'#000'}}>
                     "En el desarrollo de su trabajo de titulación demostró ser
                     comprometido y responsable en el cumplimiento de sus tareas; manifestando su
@@ -34,7 +34,7 @@ function Recomendacion() {
                 </Typography>
             </div>
 
-            <div className='Recomendacion-parte2'>
+            <div>
                 <Typography theme={theme} align="center" style={{ fontSize: 14, color:'#707070', marginTop:'5px'}}>
                     Docente Departamento de Sistemas de Información
                     Facultad de Ciencias Empresariales                    

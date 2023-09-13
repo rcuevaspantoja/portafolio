@@ -22,16 +22,17 @@
   justify-content: space-evenly;
   align-items: center;
   padding: 10px;
-  /* background-color: aqua; */
 } 
 
 /*ESTILO PARA CUANDO LOS BOTONES DE NAV. ESTEN ACTIVADOS O NO LO ESTEN*/
 .no-active{
   padding: 5px;
 }
+
 .active{
-  border-radius: 7px;
+  border-radius: 10px;
   background-color: #e6e6e6;
+  padding: 5px;
 }
 
 /* REDES */
@@ -40,8 +41,7 @@
   display: flex;
   width:400px;
   justify-content: flex-end;
-  padding-top: 11px;
-  /* background-color: yellow; */
+  align-items: center;
 }
 
 /* Rodolfo Cuevas */
@@ -50,7 +50,6 @@
   align-items: center;
   justify-content: center;
   margin: auto;
-  /* background-color: green; */
 }
 
 .Navbar-redes{
@@ -99,6 +98,7 @@
   .Menu-Burger{
     display:flex;
     flex-direction: column;
+    margin-right: 25px;
   }
 
   .Menu-abierto{
@@ -132,9 +132,8 @@
   .Navbar-3-mobil{
     display:flex;
     justify-content: center;
-    margin: 0 auto;
+    margin-left: 70px;
     width: 100%;
-    padding-left: 50px;
   }
 
   .Redes{
