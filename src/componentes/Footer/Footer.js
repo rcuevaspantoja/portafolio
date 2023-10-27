@@ -33,9 +33,7 @@ function Footer() {
 
         <div className="Footer-Panel">
           <Typography theme={theme} align="center">
-            Para más información de qué estoy haciendo en la actualidad, revisar
-            el panel de tareas. Ahí se puede ver mis tareas y en qué estoy
-            trabajando de momento.
+            Algunos proyectos están mejor estructurados y programados que otros, este tambien es una documentación de mi aprendizaje dentro del mundo del desarrollo web. Cada proyecto representa un paso en la dirección correcta.
           </Typography>
         </div>
       </footer>
@@ -66,10 +64,7 @@ function Footer() {
             <div class="carousel-item">
               <div className="Footer-Panel">
                 <Typography theme={theme} align="center">
-                  Para más información de qué estoy haciendo en la actualidad, revisar
-                  el panel de tareas. Ahí se puede ver mis tareas y en qué estoy
-                  trabajando de momento.
-                </Typography>
+                Algunos proyectos están mejor estructurados y programados que otros, este tambien es una documentación de mi aprendizaje dentro del mundo del desarrollo web. Cada proyecto representa un paso en la dirección correcta.                </Typography>
               </div>
             </div>
           </div>

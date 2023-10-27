@@ -6,9 +6,10 @@ import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import { CardActionArea } from "@mui/material";
 import minPortafolio from "../../archivos/img/miniatura-portafolio.png";
-import { SiJavascript, SiReact, SiCss3 } from "react-icons/si";
+import { SiJavascript, SiReact, SiCss3, SiSass } from "react-icons/si";
 import { FaBrain } from "react-icons/fa";
 import { TbApi } from "react-icons/tb";
+import { ImHtmlFive } from "react-icons/im"
 import PDF from "../../archivos/pdf/Machine_Learning.pdf";
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -18,6 +19,33 @@ import "bootstrap/dist/css/bootstrap.min.css";
 export default function Proyectos() {
   const proyectos = [
     {
+      nombre: "Pokedex online",
+      ruta: "https://github.com/rcuevaspantoja/pokedex",
+      imagen:
+        "https://www.kjcesports.com/wp-content/uploads/2023/05/POkedex.jpg",
+      descripcion:
+        "Sitio web en React con consumo de la API de Pokémon para buscar Pokémon, su número de ID y su tipo, con un infinite scrolling de la pokedex",
+      tecnologias: (
+        <>
+          {" "}
+          <ImHtmlFive/> <SiCss3 /> <SiReact /> <SiJavascript /> <TbApi />{" "}
+        </>
+      ),
+    },{
+      nombre: "Sitio impresión 3D",
+      ruta:" https://github.com/rcuevaspantoja/PF-Rodolfo-Cuevas",
+      imagen:
+        "https://imgtr.ee/images/2023/10/27/85f7c2d4a6576f94085f8992e878005a.png",
+      descripcion:
+        "Portafolio de impresiones para una tienda web, con la posibilidad de hacer cotizaciones para soluciones personalizadas",
+        tecnologias:(
+          <>
+            {" "}
+            <ImHtmlFive/> <SiCss3 /> <SiSass />{" "}
+          </>
+        )  
+    },
+    {
       nombre: "Portafolio de presentación mía y proyectos",
       ruta: "https://github.com/rcuevaspantoja/portafolio",
       imagen: minPortafolio,
@@ -26,7 +54,7 @@ export default function Proyectos() {
       tecnologias: (
         <>
           {" "}
-          <SiReact /> <SiJavascript /> <SiCss3 />{" "}
+          <ImHtmlFive/> <SiCss3 /> <SiReact /> <SiJavascript />{" "}
         </>
       ),
     },
@@ -40,7 +68,7 @@ export default function Proyectos() {
       tecnologias: (
         <>
           {" "}
-          <SiReact /> <SiJavascript /> <SiCss3 /> <TbApi />{" "}
+          <ImHtmlFive/> <SiCss3 /> <SiReact /> <SiJavascript /> <TbApi />{" "}
         </>
       ),
     },
@@ -54,21 +82,7 @@ export default function Proyectos() {
       tecnologias: (
         <>
           {" "}
-          <SiReact /> <SiJavascript /> <SiCss3 />{" "}
-        </>
-      ),
-    },
-    {
-      nombre: "Pokedex online",
-      ruta: "https://github.com/rcuevaspantoja/pokedex",
-      imagen:
-        "https://www.kjcesports.com/wp-content/uploads/2023/05/POkedex.jpg",
-      descripcion:
-        "Sitio web en React con consumo de la API de Pokémon para buscar Pokémon, su número de ID y su tipo",
-      tecnologias: (
-        <>
-          {" "}
-          <SiReact /> <SiJavascript /> <SiCss3 /> <TbApi />{" "}
+          <ImHtmlFive/> <SiCss3 /> <SiReact /> <SiJavascript />{" "}
         </>
       ),
     },
