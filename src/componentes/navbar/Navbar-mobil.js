@@ -4,7 +4,6 @@ import RedesMobil from './Redes-mobil'
 import NavegacionMobil from './Navegacion-mobil'
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
-import {useSpring, animated} from 'react-spring'
 import { createTheme } from '@material-ui/core/styles';
 
 export const Navbar = () => {
@@ -17,31 +16,16 @@ export const Navbar = () => {
       ].join(','),
     },});
 
-  //animacion
-  // eslint-disable-next-line
-  const [animacion, setAnimacion] = useState( false )
-
-  const springNavBar = useSpring({
-    from:{ opacity: 0, top: 1200},
-    to: { opacity: 1, top: 0},
-    config: {duration: 1200} ,
-    reverse: !animacion
-  })  
-
   const[open, setOpen] = useState(false);
 
   const multifuncionAbrir = () =>{
     //abre o cierra el menú
     setOpen( !open ) 
-    //animacion para el menu
-    setAnimacion( true )
   }
 
   const multifuncionCerrar = () =>{
     //abre o cierra el menú
     setOpen( !open ) 
-    //animacion para el menu
-    setAnimacion( false )
   }
 
   const menuAbierto = 
@@ -73,13 +57,13 @@ export const Navbar = () => {
         </div>
         
         <div className='Menu-abierto'>
-            <animated.div style={springNavBar} className='Navbar-1-mobil'>
+            <div className='Navbar-1-mobil'>
                 {open && <NavegacionMobil isMobile={true} cerrarMenuMobil={cerrarMenuMobil} />}
-            </animated.div>
+            </div>
 
-            <animated.div style={springNavBar} className='Navbar-2-mobil'>
+            <div className='Navbar-2-mobil'>
               {open && <RedesMobil />}
-            </animated.div>
+            </div>
         </div>
       </>
   )

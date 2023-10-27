@@ -1,7 +1,6 @@
 import React from 'react'
 import { Typography } from '@mui/material'
 import { createTheme } from '@material-ui/core/styles';
-import {useSpring, animated } from 'react-spring'
 
 function Recomendacion() {
 
@@ -12,18 +11,9 @@ function Recomendacion() {
             'sans-serif',
         ].join(','),
         },});
-    
-    const springCurriculum2 = useSpring({
-        from:{ opacity: 0 },
-        to: { opacity: 1 },
-        config: {duration: 1000} ,
-        delay: 1500,
-
-        })  
-
 
   return (
-    <animated.div style={springCurriculum2} className='Recomendacion'>
+    <div className='Recomendacion'>
 
             <div>
                 <Typography theme={theme} align="center" style={{ fontSize: 20, color:'#000'}}>
@@ -44,7 +34,7 @@ function Recomendacion() {
                     Universidad del BíoBío, sede Concepción-Chile.                  
                 </Typography>
             </div>
-    </animated.div>
+    </div>
   )
 }
 
