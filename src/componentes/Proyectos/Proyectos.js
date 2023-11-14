@@ -33,9 +33,9 @@ export default function Proyectos() {
       ),
     },{
       nombre: "Sitio impresión 3D",
-      ruta:" https://github.com/rcuevaspantoja/PF-Rodolfo-Cuevas",
+      ruta:"https://github.com/rcuevaspantoja/CH_DesarrolloWebFlex",
       imagen:
-        "https://imgtr.ee/images/2023/10/27/85f7c2d4a6576f94085f8992e878005a.png",
+        "https://raw.githubusercontent.com/rcuevaspantoja/CH_DesarrolloWebFlex/main/images/cover.png",
       descripcion:
         "Portafolio de impresiones para una tienda web, con la posibilidad de hacer cotizaciones para soluciones personalizadas",
         tecnologias:(
