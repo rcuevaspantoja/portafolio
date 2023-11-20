@@ -18,65 +18,10 @@ function Footer() {
           <img src={Memoji} alt="Memoji" className="Memoji" />
 
           <Typography theme={theme} align="center">
-            Esta página está en constante cambio, me gusta ir probando cosas
-            nuevas y reflejarlas acá.
+            Esta página página puede haber cambiado de la última vez que la viste. Mi portafolio es un reflejo de mi aprendizaje constante y continuo en el mundo del desarrollo, por ello hay proyectos mejor desarrollados que otros. 
           </Typography>
         </div>
 
-        <div className="Footer-Panel">
-          <Typography theme={theme} align="center">
-            Actualmente vivo en Concepción, pero no me importaría moverme a
-            cualquier otra parte. Siempre me ha gustado la idea de conocer
-            muchas partes de mundo.
-          </Typography>
-        </div>
-
-        <div className="Footer-Panel">
-          <Typography theme={theme} align="center">
-            Algunos proyectos están mejor estructurados y programados que otros, este tambien es una documentación de mi aprendizaje dentro del mundo del desarrollo web. Cada proyecto representa un paso en la dirección correcta.
-          </Typography>
-        </div>
-      </footer>
-
-      <footer className="Footer-Mobile">
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-
-          <div class="carousel-inner" align="center">
-            <div class="carousel-item active">
-              <div className="Footer-Panel">
-                <img src={Memoji} alt="Memoji" className="Memoji" />
-
-                <Typography theme={theme} align="center">
-                  Esta página está en constante cambio, me gusta ir probando cosas
-                  nuevas y reflejarlas acá.
-                </Typography>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div className="Footer-Panel">
-                <Typography theme={theme} align="center">
-                  Actualmente vivo en Concepción, pero no me importaría moverme a
-                  cualquier otra parte. Siempre me ha gustado la idea de conocer
-                  muchas partes de mundo.
-                </Typography>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div className="Footer-Panel">
-                <Typography theme={theme} align="center">
-                Algunos proyectos están mejor estructurados y programados que otros, este tambien es una documentación de mi aprendizaje dentro del mundo del desarrollo web. Cada proyecto representa un paso en la dirección correcta.                </Typography>
-              </div>
-            </div>
-          </div>
-          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only"></span>
-          </a>
-          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only"></span>
-          </a>
-        </div>
       </footer>
     </>
   );

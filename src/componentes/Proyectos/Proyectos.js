@@ -41,7 +41,7 @@ export default function Proyectos() {
         tecnologias:(
           <>
             {" "}
-            <ImHtmlFive/> <SiCss3 /> <SiSass />{" "}
+            <ImHtmlFive/> <SiCss3 /> <SiSass />{" "}  
           </>
         )  
     },

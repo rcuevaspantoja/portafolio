@@ -12,12 +12,12 @@
 
 .Footer-Panel{
     display:flex;
-    width: 30%;
+    width: 50%;
     color: white;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin: 0px 15px 15px 15px;
+    padding: 5px;
 }
 
 .Memoji{
@@ -27,14 +27,6 @@
 }
 
 @media (max-width : 1150px){
-    .Footer-Desktop{
-        display: none;
-    }
-
-    .Footer-Mobile{
-        display: inline;
-        height: 250px;
-    }
 
     .carousel-item{
         background-color: black;
