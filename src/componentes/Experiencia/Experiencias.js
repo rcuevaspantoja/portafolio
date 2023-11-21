@@ -11,7 +11,6 @@ function Experiencias() {
 
       <ExperienciasNormal />
       <ExperienciasMobil />
-      <Recomendacion />
     </div>
   )
 }

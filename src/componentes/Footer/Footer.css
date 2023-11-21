@@ -1,23 +1,12 @@
-.Footer-Desktop{
-    display:flex;
-    background-color: rgb(0, 0, 0);
-    width: 100%;
-    justify-content: center;
-    box-shadow: 0 -10px 10px gray
-}
-
-.Footer-Mobile{
-    display: none;
-}
-
-.Footer-Panel{
-    display:flex;
-    width: 50%;
-    color: white;
-    flex-direction: row;
+.Footer{
+    display: flex;
     justify-content: center;
     align-items: center;
-    padding: 5px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    width: 100%;
+    padding: 25px;
+    box-shadow: 0 -10px 10px gray
 }
 
 .Memoji{
@@ -26,15 +15,14 @@
     width: 150px;
 }
 
-@media (max-width : 1150px){
-
-    .carousel-item{
-        background-color: black;
+@media (min-width : 1920px){
+    .Footer{
+        padding: 0 300px 0 300px;
     }
+}
 
-    .Footer-Panel{
-        display: flex;
-        width: 70%;
-        flex-direction: row;
+@media (min-width : 2000px){
+    .Footer{
+        padding: 0 1000px 0 1000px;
     }
 }

@@ -32,7 +32,7 @@ function Experienciasmobil() {
             }}>
 
             <div className='AcercaExperiencias-pasatiempos'>
-                <Typography theme={theme} variant='h6' color="common.white"> Mayo-2022 al Presente </Typography>
+                <Typography theme={theme} variant='h6' color="common.white"> Mayo-2022 a Septiembre-2023 </Typography>
             </div>   
             <div className='Descripcion-Empleo'>
               <Typography theme={theme} variant='h4' color="common.white"> Operador de Automatización en Orizon S.A </Typography> <br />

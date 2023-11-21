@@ -1,34 +1,21 @@
-/*Div General*/
 .Acerca {
     display: flex;
+    align-items: center;
     min-height: 60vh;
-    margin: 50px 50px 0 50px;
+    max-width: 1500px;
+    padding-top: 50px;
+    margin: auto;
     justify-content: space-around;
-
 }
 
-/*Div 1*/
-.AcercaFoto{
-    display: flex;
-    align-items: center;
-    margin-right: 2%;
-    margin-left: 2%;
-    justify-content: center;
-    flex-direction: column;
-
-}
-/*Div 2*/
-.profile-pic{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+p{
+    font-size: 19px;
 }
 
 .AcercaDescripcion{
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    max-width: 60%;
+    max-width: 65%;
 }
 
 .calendar{
@@ -39,8 +26,42 @@
 
 .profile-pic{
     max-width: 400px;
+    height: 450px;
     border-radius: 7px;
     box-shadow: 10px 10px 5px rgb(210, 210, 210);
+}
+
+.fotodeperfil{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.simbolo_alerta{
+    font-size: 50px;
+    margin: 10px;
+    color: #02bc7d;
+    animation: glow 1s infinite alternate;
+}
+
+.botonCV{
+    background-color: #be2af2;
+    width: 200px;
+    height: 50px;
+    border-radius: 12px
+}
+
+.opentowork{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.opentowork > p{
+    margin: auto;
+    font-size: 25px;
+    font-weight: bold;
+    color: #02bc7d;
 }
 
 /*VERSION MOBIL*/
@@ -61,7 +82,7 @@
         margin-bottom: 25px;
         
     }
-    /*Hacer ajustable el texto para que no tengan tantas lineas */ 
+
     .AcercaDescripcion{
         display: flex;
         flex-direction: column;
@@ -72,68 +93,22 @@
         min-width: 100%;
     }
 
-    .AcercaPasatiempos{
-        display: flex;
-        align-items: center;
-        margin-right: 2% ;
-        margin-top: 2%;
-        margin-left: 2%;
+    .calendar{
+        display: none;
     }
-
-    .AcercaPasatiempos-box{
-        display: flex;
-        border-radius: 5px;
-        flex-direction: column;
-    }
-
-    .AcercaPasatiempos-descripcion{
-        min-height: 100px;
-        max-height: 250px;
-        margin-left: 10px;
-        margin-right: 10px;
-        margin-bottom: 10px;
-        margin-top: 20px;
-        overflow: auto;
-        scrollbar-gutter: stable;
-    }
-
 }
 
 @media (max-width: 600px) {
 
-    .AcercaDescripcionTexto{
-        display: block;
-        max-height: 250px;
-        overflow-y: scroll;
-    }
-
-    .AcercaPasatiempos-botones{
-        display: flex;
-        height: 120px;
-        align-items: flex-start;
-        flex-wrap: wrap;
-    }
-    
-    .AcercaPasatiempos-botones-hijo{
-        width: 40%;
-    }
-
-    .AcercaPasatiempos-descripcion{
-        height: 150px;
-        margin-left: 10px;
-        margin-right: 10px;
-        margin-bottom: 10px;
-        margin-top: 0px;
-        overflow: auto;
-        scrollbar-gutter: stable; /*Agrega el espacio del scrollbar aunque no haya scroll*/
-    }
-
-    /*Foto de perfil*/
     .profile-pic{
         display: flex;
         align-items: center;
         justify-content: center;
         width: 85%;   
+    }
+
+    .calendar{
+        display: none;
     }
     
 }
