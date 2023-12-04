@@ -37,7 +37,7 @@
 }
 
 /* REDES */
-.Navbar-2{
+.NavbarRedes{
   align-items: center;
   display: flex;
   width:400px;
@@ -46,8 +46,7 @@
   padding: 0 50px 0 0;
 }
 
-/* Rodolfo Cuevas */
-.Navbar-3{
+.NavbarTitulo{
   display: flex;
   align-items: center;
   justify-content: center;

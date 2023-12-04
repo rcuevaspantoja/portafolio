@@ -29,7 +29,7 @@ export const Redes = () => {
   };
 
   return (
-    <>
+    <div className="NavbarRedes">
       <div>
         {hoverGithub ? (
           <Typography theme={theme} style={{ fontSize: 20, color: "#707070" }}>
@@ -80,7 +80,7 @@ export const Redes = () => {
           </div>
         </IconButton>
       </div>
-    </>
+    </div>
   );
 };
 export default Redes;

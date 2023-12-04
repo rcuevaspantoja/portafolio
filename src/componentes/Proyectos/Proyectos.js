@@ -31,19 +31,6 @@ export default function Proyectos() {
           <ImHtmlFive/> <SiCss3 /> <SiReact /> <SiJavascript /> <TbApi />{" "}
         </>
       ),
-    },{
-      nombre: "Sitio impresión 3D",
-      ruta:"https://github.com/rcuevaspantoja/CH_DesarrolloWebFlex",
-      imagen:
-        "https://raw.githubusercontent.com/rcuevaspantoja/CH_DesarrolloWebFlex/main/images/cover.png",
-      descripcion:
-        "Portafolio de impresiones para una tienda web, con la posibilidad de hacer cotizaciones para soluciones personalizadas",
-        tecnologias:(
-          <>
-            {" "}
-            <ImHtmlFive/> <SiCss3 /> <SiSass />{" "}  
-          </>
-        )  
     },
     {
       nombre: "Portafolio de presentación mía y proyectos",

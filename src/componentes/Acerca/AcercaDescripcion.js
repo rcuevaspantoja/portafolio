@@ -1,5 +1,5 @@
 import React from "react";
-import AcercaPasatiempos from "./GithubCalendar";
+import GithubCalendar from "./GithubCalendar";
 
 function AcercaDescripcion() {
 
@@ -18,8 +18,6 @@ function AcercaDescripcion() {
         <h3>Conocimientos</h3>
         <p>{trabajo}</p>
       </div>
-
-      <AcercaPasatiempos />
     </div>
   );
 }

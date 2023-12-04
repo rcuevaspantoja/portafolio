@@ -1,9 +1,8 @@
 .Acerca {
     display: flex;
-    align-items: center;
     min-height: 60vh;
     max-width: 1500px;
-    padding-top: 50px;
+    padding: 5%;
     margin: auto;
     justify-content: space-around;
 }
@@ -25,9 +24,9 @@ p{
 
 
 .profile-pic{
-    max-width: 400px;
-    height: 450px;
-    border-radius: 7px;
+    width: 300px;
+    object-fit: scale-down;
+    border-radius: 50%;
     box-shadow: 10px 10px 5px rgb(210, 210, 210);
 }
 
@@ -35,11 +34,12 @@ p{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 25px;
 }
 
 .simbolo_alerta{
     font-size: 50px;
-    margin: 10px;
+    margin: 5px;
     color: #02bc7d;
     animation: glow 1s infinite alternate;
 }
@@ -55,6 +55,7 @@ p{
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 15px
 }
 
 .opentowork > p{
@@ -90,15 +91,23 @@ p{
         margin-top: 2%;
         margin-left: 2%;
         margin-bottom: 30px;
-        min-width: 100%;
+        min-width: 90%;
     }
 
     .calendar{
         display: none;
     }
+
+    p, h3{
+        text-align: center;
+    }
 }
 
 @media (max-width: 600px) {
+
+    .Acerca{
+        padding: 5px;
+    }
 
     .profile-pic{
         display: flex;
@@ -111,4 +120,7 @@ p{
         display: none;
     }
     
+    p, h3, h2{
+        text-align: center;
+    }
 }

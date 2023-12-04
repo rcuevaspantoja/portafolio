@@ -26,12 +26,6 @@ export const Navbar = () => {
       name: 'Proyectos',
       exact: true,
       target: ''
-    },
-    {
-      path: '/Resume',
-      name: 'Curriculum',
-      exact: true,
-      target: ''  // '_blank' => nueva ventana
     }
   ]
 
@@ -57,12 +51,7 @@ export const Navbar = () => {
 
     <div className='Contenedor-Navbar'>
 
-      {/* Direcciones para los tabs */}
-      <div className='Navbar-1'>  
-        <Nav/>
-      </div>
-
-      <div className='Navbar-3'>
+      <div className='NavbarTitulo'>
         <Typography theme={theme} style={{ fontSize: 55, color:'#000000'}}> Rodolfo Cuevas </Typography>
       </div>
 
