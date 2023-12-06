@@ -50,7 +50,9 @@ export const Navbar = () => {
   return (
 
     <div className='Contenedor-Navbar'>
-
+      <div>
+        <Nav/>
+      </div>
       <div className='NavbarTitulo'>
         <Typography theme={theme} style={{ fontSize: 55, color:'#000000'}}> Rodolfo Cuevas </Typography>
       </div>

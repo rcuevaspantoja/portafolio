@@ -17,6 +17,8 @@ function AcercaDescripcion() {
 
         <h3>Conocimientos</h3>
         <p>{trabajo}</p>
+
+        <GithubCalendar/>
       </div>
     </div>
   );
