@@ -9,10 +9,9 @@ import minPortafolio from "../../archivos/img/miniatura-portafolio.png";
 import { SiJavascript, SiReact, SiCss3, SiSass } from "react-icons/si";
 import { FaBrain } from "react-icons/fa";
 import { TbApi } from "react-icons/tb";
-import { ImHtmlFive } from "react-icons/im"
+import { ImHtmlFive } from "react-icons/im";
 import PDF from "../../archivos/pdf/Machine_Learning.pdf";
 import "bootstrap/dist/css/bootstrap.min.css";
-
 
 /** https://react-icons.github.io/react-icons << iconos */
 
@@ -28,34 +27,7 @@ export default function Proyectos() {
       tecnologias: (
         <>
           {" "}
-          <ImHtmlFive/> <SiCss3 /> <SiReact /> <SiJavascript /> <TbApi />{" "}
-        </>
-      ),
-    },
-    {
-      nombre: "Portafolio de presentación mía y proyectos",
-      ruta: "https://github.com/rcuevaspantoja/portafolio",
-      imagen: minPortafolio,
-      descripcion:
-        "Portafolio donde se almacenará la gran parte de mis proyectos de programación y CV",
-      tecnologias: (
-        <>
-          {" "}
-          <ImHtmlFive/> <SiCss3 /> <SiReact /> <SiJavascript />{" "}
-        </>
-      ),
-    },
-    {
-      nombre: "Web con información de Peliculas y Series",
-      ruta: "https://github.com/rcuevaspantoja/Informacion-Peliculas",
-      imagen:
-        "https://raw.githubusercontent.com/rcuevaspantoja/Informacion-Peliculas/main/src/imagenes/Capturas/captura_todo.png",
-      descripcion:
-        "Sitio web en React con consumo de API para postular a Jr Dev",
-      tecnologias: (
-        <>
-          {" "}
-          <ImHtmlFive/> <SiCss3 /> <SiReact /> <SiJavascript /> <TbApi />{" "}
+          <ImHtmlFive /> <SiCss3 /> <SiReact /> <SiJavascript /> <TbApi />{" "}
         </>
       ),
     },
@@ -69,7 +41,21 @@ export default function Proyectos() {
       tecnologias: (
         <>
           {" "}
-          <ImHtmlFive/> <SiCss3 /> <SiReact /> <SiJavascript />{" "}
+          <ImHtmlFive /> <SiCss3 /> <SiReact /> <SiJavascript />{" "}
+        </>
+      ),
+    },
+    {
+      nombre: "Web con información de Peliculas y Series",
+      ruta: "https://github.com/rcuevaspantoja/Informacion-Peliculas",
+      imagen:
+        "https://raw.githubusercontent.com/rcuevaspantoja/Informacion-Peliculas/main/src/imagenes/Capturas/captura_todo.png",
+      descripcion:
+        "Sitio web en React con consumo de API para postular a Jr Dev",
+      tecnologias: (
+        <>
+          {" "}
+          <ImHtmlFive /> <SiCss3 /> <SiReact /> <SiJavascript /> <TbApi />{" "}
         </>
       ),
     },
