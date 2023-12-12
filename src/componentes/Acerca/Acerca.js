@@ -5,10 +5,13 @@ import FotodePerfil from "./FotodePerfil";
 
 function Acerca() {
 
+
+
   return (
     <div className="Acerca">
       <FotodePerfil />
       <AcercaDescripcion />
+
     </div>
   );
 }

@@ -6,7 +6,7 @@ function AcercaDescripcion() {
   const saludo = "Hola, ";
   const presentacion = "Soy Ingeniero Civil en Informátca apasionado por la tecnología, diseño y las metodologías ágiles desde Concepción, Chile. Con grandes motivaciones en conocer gente con intereses similares y hacer comunidad en la región Sur del país. ";
 
-  const trabajo = "Poseo experiencia trabajando en análisis de datos y reportabilidad en el cargo de Ingeniero en SCADA por más de 1 año, amplios conocimientos en bases de datos y herramientas de infomática. Últimamente centrnado mis estudios y en desarrollo FrontEnd de la mano de HTML5, CSS, Javascript y React"
+  const trabajo = "Poseo experiencia trabajando en análisis de datos y reportabilidad en el cargo de Ingeniero en SCADA por más de 1 año, amplios conocimientos en bases de datos y herramientas de infomática. Últimamente centrando mis estudios y en desarrollo FrontEnd de la mano de HTML5, CSS, Javascript y React"
 
   return (
     <div className="AcercaDescripcion">

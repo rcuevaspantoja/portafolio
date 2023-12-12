@@ -14,7 +14,7 @@ function App() {
 
       <div className="App">
         <Navbar />
-
+        {      alert("Este portafolio no está actualizado y no refleja mis últimos conocimientos en programacion. En este momento se encuentra en desarrollo una versión mejorada del mismo -Rodolfo 11-Dec-23")}
         <Routes>
           <Route path="/" element={<Navigate to="/Acerca" />} />
           <Route
